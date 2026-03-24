@@ -33,29 +33,29 @@ DB_PATH = "users_data.db"
 REQUIRED_VIDEOS = 10
 DOMAIN = "AimMani.bothost.tech"
 CHANNEL_LINK = "https://t.me/AimNooBsoft"
-DOWNLOAD_LINK = "https://go.linkify.ru/2GPF"
+DOWNLOAD_LINK = "https://t.me/AimNooBsoft"
 WEBAPP_URL = f"https://{DOMAIN}"
 
 # Данные для видео
-VIDEO_TITLE = "Чит для Standoff 2 0.37.1 | Скачать AimNoob 2025"
-VIDEO_DESCRIPTION = """Скачать чит для Standoff 2 0.37.1: https://t.me/AimNooBsoft
+VIDEO_TITLE = "⚡️КАК СКАЧАТЬ ЧИТ 0.37.1 STANDOFF 2 БЕЗ РУТ И БАНА ПОЛНАЯ УСТАНОВКА"
 
-🔥 Функции чита:
-• Аимбот с настройками
-• Wallhack (стены)
-• ESP игроков
-• No Recoil
-• Автоматическая стрельба
-• И многое другое!
+VIDEO_DESCRIPTION = """👉СКАЧАТЬ ТУТ ТГК: https://t.me/AimNooBsoft
+👉СКАЧАТЬ ТУТ ТГК: https://t.me/AimNooBsoft
+👉СКАЧАТЬ ТУТ ТГК: https://t.me/AimNooBsoft
+👉СКАЧАТЬ ТУТ ТГК: https://t.me/AimNooBsoft
 
-✅ Работает на всех версиях Android
-✅ Без вирусов и банов
-✅ Регулярные обновления
 
-Подпишись на канал: https://t.me/AimNooBsoft
-#standoff2 #чит #aimbot #wallhack #standoff2чит #aimnoob"""
-COMMENT_TEXT = "Скачать чит Standoff 2: https://t.me/AimNooBsoft"
-TAGS = "standoff2, чит standoff2, скачать чит standoff2, standoff2 aimbot, standoff2 wallhack, aimnoob, чит на андроид, standoff2 0.37.1, standoff2 читы, aimbot standoff2"
+standoff 2, стандофф, standoff, стендофф, standoff2, веля, стендофф 2, стэндофф 2, стендоф, стэндофф, standof, стандофф2, стандоф, рик, обнова 0.37.1, обновление 0.37.1, kasai_standoff2, стандофф обновление, со2, so2, стандоф 2, стендофф2, 0.37.1 стандофф 2, стендов, стандофф 2 0.37.1, 0.37.1, в стандофф 2, standoff 2 0.37.1, ric, скрафтил аркану, крафт стандофф 2, мем стандофф, мем стандофф 2, девушка в стандофф 2, wonderfull shorts, софт касай, казашка, kazashka, мафиозник, kasai софт, kasai shorts, fragmovie standoff, фрагмуви стандофф, apollon standoff 2, apollon shorts, казашка стандофф 2, мафиозник и казашка, мемы стандофф 2, мемы стандофф 2 шортс, мемы стандофф 2 без мата, смешные моменты стандофф 2, стандофф 2 мемы шортс, юкан, шортс, казашка standoff 2, казашка стандофф, девушка играет в стандофф, shorts, крафт арканы standoff 2, standoff 2 full allies gameplay, лучший игрок на телефоне в стандофф 2, fragmovie standoff 2, мувик стандофф 2, ipad pro 2020 standoff 2, айфон 7 стандофф 2, ipad pro 2021 standoff 2, frontos, лучший игрок с телефона standoff 2, мувики стандофф 2, фрагмуви стандофф 2, standoff 2 fragmovie, #h9ije, айпад 9 стандофф 2, стандофф 2 фрагмуви, стандофф 2 мувик, h9nto, айпад 2021 стандофф 2, ipad pro 2018 standoff 2, best player standoff 2, en9rjee so2, h9ije standoff 2, m9 bayonet standoff 2, стендоф 2, обзор обновления 0.37.1, standoff 2 allies legend, standoff 2 allies gameplay, standoff 2 full competitive match gameplay, standoff 2 competitive gameplay, lilith so2, standoff 2 allies, standoff 2 ranked, standoff 2 settings, standoff 2 competitive, мувик, lilith so2 allies, девушка, сталофф, belka, веля standoff 2, веля стандофф 2, стандофы, со, белка, тик так, керамбит голд, как скрафтить ориджин коллекцию, читы стандофф2, hacking, root, ipa, cheating, cheats, hack, hacks, cheat, кент апк, kent.apk, видео, тиктак стрим, стримы, tictac, тиктак, standoff 2 0.37.1, standoff 0.37.1, скачать 0.37.1, стандофф 2 читы, стандофф 2 читы на телефон, как скачать читы на стандофф 2, чит стандофф 2, как скачать читы на стандофф 2 0.37.1, читы стандофф 2, чит на стандофф, стандофф 2 чит, чит на standoff 2, standoff 2 читы, скачать читы на стандофф 2, standoff 2 чит, как скачать читы на standoff 2 0.37.1, чит на standoff 2 0.37.1, читы на standoff 2, читы standoff 2, читы на стандофф 2 0.37.1, чит на стандофф 2, читы на standoff 2 0.37.1, standoff читы, раш, дата новогоднего обновления, читыстандофф, прикол, приколы, читы на стандофф 2, читы, косай, косой, wonderfull, приколыстандофф, приколыстандофф2, шерлок стандофф, 0.37.1, фрагмуви, шерлок standoff2, шерлок, обновление, обнова стандофф, эйс, kasai_standoff, касай_стандофф, дата выхода обновления 0.37.1, обновление в плей маркете, axlebolt, новогоднее обновление 0.37.1, скачать обновление, дата 0.37.1, что добавят 0.37.1, мамонт, купил аккаунты, #читstandoff #читыстандофф #чттыstandoff2 #читстандофф2 #раздачаголды #fragmovie, #standoff2​ #стандофф2​ #читыстандофф2​
+#standoff2​ #стандофф2​ #читыстандофф2​ #стендофф2​, касай, касай_стандофф2, стандоф2, трейд, трейд в стандофф 2, standof2, стендоф2, стандофф 2, fragmovie, standoff, standoff 2 fragmovie, fragmovie standoff 2, стандофф, мувик стандофф 2, standoff2, фрагмуви, фрагмуви стандофф 2, стандофф 2 фрагмуви, стендофф 2, мувики стандофф 2, стэндофф 2, lusik, highlights, фрагмувик, nicky, standoff 2 0.37.1, #standoff #стандофф #standoff2 #стандофф2 #раздачаголды #fragmovie, чит на standoff 2 0.37.1, как скачать читы на standoff 2 0.37.1, shooter, fps, бесплатно, standoff читы, античит, сенса, скачать читы, бан, шутер от первого лица, читы на стандофф 2 0.37.1, читеры, стандофф 2 0.37.1, 0.37.1, аполлон_стандофф, аполлон_стандофф2, аполлон, трейд,
+
+Скачать тут https://t.me/AimNooBsoft"""
+
+COMMENT_TEXT = """👉СКАЧАТЬ ТУТ ТГК: https://t.me/AimNooBsoft
+👉СКАЧАТЬ ТУТ ТГК: https://t.me/AimNooBsoft
+👉СКАЧАТЬ ТУТ ТГК: https://t.me/AimNooBsoft
+👉СКАЧАТЬ ТУТ ТГК: https://t.me/AimNooBsoft"""
+
+TAGS = """standoff 2, стандофф, standoff, стендофф, standoff2, веля, стендофф 2, стэндофф 2, стендоф, стэндофф, standof, стандофф2, стандоф, рик, обнова 0.37.1, обновление 0.37.1, kasai_standoff2, стандофф обновление, со2, so2, стандоф 2, стендофф2, 0.37.1 стандофф 2, стендов, стандофф 2 0.37.1, 0.37.1, в стандофф 2, standoff 2 0.37.1, ric, скрафтил аркану, крафт стандофф 2, мем стандофф, мем стандофф 2, девушка в стандофф 2, wonderfull shorts, софт касай, казашка, kazashka, мафиозник, kasai софт, kasai shorts, fragmovie standoff, фрагмуви стандофф, apollon standoff 2, apollon shorts, казашка стандофф 2, мафиозник и казашка, мемы стандофф 2, мемы стандофф 2 шортс, мемы стандофф 2 без мата, смешные моменты стандофф 2, стандофф 2 мемы шортс, юкан, шортс, казашка standoff 2, казашка стандофф, девушка играет в стандофф, shorts, крафт арканы standoff 2, standoff 2 full allies gameplay, лучший игрок на телефоне в стандофф 2, fragmovie standoff 2, мувик стандофф 2, ipad pro 2020 standoff 2, айфон 7 стандофф 2, ipad pro 2021 standoff 2, frontos, лучший игрок с телефона standoff 2, мувики стандофф 2, фрагмуви стандофф 2, standoff 2 fragmovie, айпад 9 стандофф 2, стандофф 2 фрагмуви, стандофф 2 мувик, айпад 2021 стандофф 2, ipad pro 2018 standoff 2, best player standoff 2, m9 bayonet standoff 2, стендоф 2, обзор обновления 0.37.1, standoff 2 allies legend, standoff 2 allies gameplay, standoff 2 full competitive match gameplay, standoff 2 competitive gameplay, standoff 2 allies, standoff 2 ranked, standoff 2 settings, standoff 2 competitive, мувик, девушка, веля standoff 2, веля стандофф 2, читы стандофф2, hacking, root, cheating, cheats, hack, hacks, cheat, standoff 2 0.37.1, standoff 0.37.1, скачать 0.37.1, стандофф 2 читы, стандофф 2 читы на телефон, как скачать читы на стандофф 2, чит стандофф 2, как скачать читы на стандофф 2 0.37.1, читы стандофф 2, чит на стандофф, стандофф 2 чит, чит на standoff 2, standoff 2 читы, скачать читы на стандофф 2, standoff 2 чит, как скачать читы на standoff 2 0.37.1, чит на standoff 2 0.37.1, читы на standoff 2, читы standoff 2, читы на стандофф 2 0.37.1, чит на стандофф 2, читы на standoff 2 0.37.1, standoff читы, читы на стандофф 2, читы, обновление, обнова стандофф, эйс, дата выхода обновления 0.37.1, скачать обновление, дата 0.37.1, что добавят 0.37.1, трейд, трейд в стандофф 2, стандофф 2, fragmovie, standoff, standoff 2 fragmovie, fragmovie standoff 2, стандофф, мувик стандофф 2, standoff2, фрагмуви, фрагмуви стандофф 2, стандофф 2 фрагмуви, стендофф 2, мувики стандофф 2, стэндофф 2, highlights, фрагмувик, standoff 2 0.37.1, чит на standoff 2 0.37.1, как скачать читы на standoff 2 0.37.1, shooter, fps, бесплатно, standoff читы, античит, скачать читы, бан, шутер от первого лица, читы на стандофф 2 0.37.1, читеры, стандофф 2 0.37.1, 0.37.1"""
 
 logging.basicConfig(
     level=logging.INFO,
@@ -74,22 +74,18 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Telegram Bot
 bot = Bot(token=API_TOKEN)
 storage = MemoryStorage()
 dp = Dispatcher(storage=storage)
 
 
-# ================== СОСТОЯНИЯ FSM ==================
 class AddVideo(StatesGroup):
     waiting_for_url = State()
 
 
 # ================== БАЗА ДАННЫХ ==================
 async def init_db():
-    """Инициализация базы данных"""
     async with aiosqlite.connect(DB_PATH) as db:
-        # Таблица пользователей
         await db.execute("""
             CREATE TABLE IF NOT EXISTS users (
                 user_id INTEGER PRIMARY KEY,
@@ -102,8 +98,6 @@ async def init_db():
                 registered_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
         """)
-        
-        # Таблица видео
         await db.execute("""
             CREATE TABLE IF NOT EXISTS videos (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -114,8 +108,6 @@ async def init_db():
                 FOREIGN KEY (user_id) REFERENCES users(user_id)
             )
         """)
-        
-        # Таблица выданных ключей
         await db.execute("""
             CREATE TABLE IF NOT EXISTS issued_keys (
                 user_id INTEGER PRIMARY KEY,
@@ -124,150 +116,72 @@ async def init_db():
                 FOREIGN KEY (user_id) REFERENCES users(user_id)
             )
         """)
-        
         await db.commit()
         logger.info("Database initialized")
 
 
 async def get_user_data(user_id: int) -> dict:
-    """Получить данные пользователя"""
     async with aiosqlite.connect(DB_PATH) as db:
         db.row_factory = aiosqlite.Row
-        async with db.execute(
-            "SELECT * FROM users WHERE user_id = ?", (user_id,)
-        ) as cur:
+        async with db.execute("SELECT * FROM users WHERE user_id = ?", (user_id,)) as cur:
             row = await cur.fetchone()
             if row:
                 user = dict(row)
             else:
                 user = {
-                    "user_id": user_id,
-                    "video_count": 0,
-                    "is_completed": 0,
-                    "key_issued": 0,
-                    "is_banned": 0,
-                    "registered_at": None,
-                    "full_name": None,
-                    "username": None,
+                    "user_id": user_id, "video_count": 0, "is_completed": 0,
+                    "key_issued": 0, "is_banned": 0, "registered_at": None,
+                    "full_name": None, "username": None,
                 }
-
-        # Получаем ключ
-        async with db.execute(
-            "SELECT key_value FROM issued_keys WHERE user_id = ?",
-            (user_id,)
-        ) as cur:
+        async with db.execute("SELECT key_value FROM issued_keys WHERE user_id = ?", (user_id,)) as cur:
             key_row = await cur.fetchone()
             user["key"] = key_row[0] if key_row else None
-
-        # Получаем видео
-        async with db.execute(
-            "SELECT * FROM videos WHERE user_id = ? ORDER BY submitted_at ASC",
-            (user_id,)
-        ) as cur:
+        async with db.execute("SELECT * FROM videos WHERE user_id = ? ORDER BY submitted_at ASC", (user_id,)) as cur:
             rows = await cur.fetchall()
             user["videos"] = [dict(r) for r in rows]
-
     return user
 
 
 async def get_or_create_user(user_id: int, full_name: str = None, username: str = None):
-    """Получить или создать пользователя"""
     async with aiosqlite.connect(DB_PATH) as db:
-        async with db.execute(
-            "SELECT * FROM users WHERE user_id = ?", (user_id,)
-        ) as cursor:
+        async with db.execute("SELECT * FROM users WHERE user_id = ?", (user_id,)) as cursor:
             user = await cursor.fetchone()
-            
             if not user:
-                await db.execute("""
-                    INSERT INTO users (user_id, full_name, username)
-                    VALUES (?, ?, ?)
-                """, (user_id, full_name, username))
+                await db.execute("INSERT INTO users (user_id, full_name, username) VALUES (?, ?, ?)",
+                               (user_id, full_name, username))
                 await db.commit()
-                return {
-                    "user_id": user_id,
-                    "full_name": full_name,
-                    "username": username,
-                    "video_count": 0,
-                    "is_completed": 0,
-                    "key_issued": 0,
-                    "is_banned": 0
-                }
-            else:
-                return {
-                    "user_id": user[0],
-                    "full_name": user[1],
-                    "username": user[2],
-                    "video_count": user[3],
-                    "is_completed": user[4],
-                    "key_issued": user[5],
-                    "is_banned": user[6]
-                }
+                return {"user_id": user_id, "full_name": full_name, "username": username,
+                        "video_count": 0, "is_completed": 0, "key_issued": 0, "is_banned": 0}
+            return {"user_id": user[0], "full_name": user[1], "username": user[2],
+                    "video_count": user[3], "is_completed": user[4], "key_issued": user[5], "is_banned": user[6]}
 
 
 async def add_video(user_id: int, video_url: str):
-    """Добавить видео для проверки"""
     async with aiosqlite.connect(DB_PATH) as db:
-        # Добавляем видео
-        await db.execute("""
-            INSERT INTO videos (user_id, video_url, status)
-            VALUES (?, ?, 'pending')
-        """, (user_id, video_url))
-        
-        # Обновляем счетчик видео
-        await db.execute("""
-            UPDATE users 
-            SET video_count = video_count + 1
-            WHERE user_id = ?
-        """, (user_id,))
-        
-        # Проверяем, достиг ли пользователь лимита
-        async with db.execute(
-            "SELECT video_count FROM users WHERE user_id = ?", (user_id,)
-        ) as cursor:
+        await db.execute("INSERT INTO videos (user_id, video_url, status) VALUES (?, ?, 'pending')",
+                        (user_id, video_url))
+        await db.execute("UPDATE users SET video_count = video_count + 1 WHERE user_id = ?", (user_id,))
+        async with db.execute("SELECT video_count FROM users WHERE user_id = ?", (user_id,)) as cursor:
             count = (await cursor.fetchone())[0]
-            
             if count >= REQUIRED_VIDEOS:
-                await db.execute("""
-                    UPDATE users SET is_completed = 1
-                    WHERE user_id = ?
-                """, (user_id,))
-        
+                await db.execute("UPDATE users SET is_completed = 1 WHERE user_id = ?", (user_id,))
         await db.commit()
         return count
 
 
 async def issue_key(user_id: int):
-    """Выдать ключ пользователю"""
     async with aiosqlite.connect(DB_PATH) as db:
-        # Проверяем, есть ли уже ключ
-        async with db.execute(
-            "SELECT key_value FROM issued_keys WHERE user_id = ?", (user_id,)
-        ) as cursor:
+        async with db.execute("SELECT key_value FROM issued_keys WHERE user_id = ?", (user_id,)) as cursor:
             if await cursor.fetchone():
                 return None
-        
-        # Генерируем ключ
         key = f"AIM-{secrets.token_hex(8).upper()}"
-        
-        # Сохраняем ключ
-        await db.execute("""
-            INSERT INTO issued_keys (user_id, key_value)
-            VALUES (?, ?)
-        """, (user_id, key))
-        
-        # Обновляем статус пользователя
-        await db.execute("""
-            UPDATE users SET key_issued = 1
-            WHERE user_id = ?
-        """, (user_id,))
-        
+        await db.execute("INSERT INTO issued_keys (user_id, key_value) VALUES (?, ?)", (user_id, key))
+        await db.execute("UPDATE users SET key_issued = 1 WHERE user_id = ?", (user_id,))
         await db.commit()
         return key
 
 
 async def get_stats() -> dict:
-    """Получить статистику"""
     async with aiosqlite.connect(DB_PATH) as db:
         stats = {}
         queries = {
@@ -286,14 +200,11 @@ async def get_stats() -> dict:
 
 
 async def get_leaderboard() -> list:
-    """Получить таблицу лидеров"""
     async with aiosqlite.connect(DB_PATH) as db:
         db.row_factory = aiosqlite.Row
         async with db.execute(
-            "SELECT user_id, full_name, username, video_count, "
-            "is_completed, key_issued FROM users "
-            "WHERE is_banned = 0 AND video_count > 0 "
-            "ORDER BY video_count DESC, registered_at ASC LIMIT 50"
+            "SELECT user_id, full_name, username, video_count, is_completed, key_issued FROM users "
+            "WHERE is_banned = 0 AND video_count > 0 ORDER BY video_count DESC, registered_at ASC LIMIT 50"
         ) as cur:
             rows = await cur.fetchall()
             return [dict(r) for r in rows]
@@ -301,55 +212,20 @@ async def get_leaderboard() -> list:
 
 # ================== КЛАВИАТУРЫ ТЕЛЕГРАМ ==================
 def get_main_keyboard():
-    """Главная клавиатура"""
-    keyboard = InlineKeyboardMarkup(
-        inline_keyboard=[
-            [
-                InlineKeyboardButton(
-                    text="🎮 Открыть Mini App",
-                    web_app=WebAppInfo(url=f"{WEBAPP_URL}/app")
-                )
-            ],
-            [
-                InlineKeyboardButton(
-                    text="📊 Моя статистика",
-                    callback_data="stats"
-                )
-            ],
-            [
-                InlineKeyboardButton(
-                    text="📹 Отправить видео",
-                    callback_data="add_video"
-                )
-            ],
-            [
-                InlineKeyboardButton(
-                    text="🔑 Получить ключ",
-                    callback_data="get_key"
-                )
-            ],
-            [
-                InlineKeyboardButton(
-                    text="📌 Наш канал",
-                    url=CHANNEL_LINK
-                )
-            ]
-        ]
-    )
-    return keyboard
+    return InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="🎮 Открыть Mini App", web_app=WebAppInfo(url=f"{WEBAPP_URL}/app"))],
+        [InlineKeyboardButton(text="📊 Моя статистика", callback_data="stats")],
+        [InlineKeyboardButton(text="📹 Отправить видео", callback_data="add_video")],
+        [InlineKeyboardButton(text="🔑 Получить ключ", callback_data="get_key")],
+        [InlineKeyboardButton(text="📌 Наш канал", url=CHANNEL_LINK)]
+    ])
 
 
 # ================== ОБРАБОТЧИКИ ТЕЛЕГРАМ ==================
 @dp.message(CommandStart())
 async def cmd_start(message: types.Message):
-    """Обработчик команды /start"""
-    user = await get_or_create_user(
-        user_id=message.from_user.id,
-        full_name=message.from_user.full_name,
-        username=message.from_user.username
-    )
-    
-    welcome_text = (
+    user = await get_or_create_user(message.from_user.id, message.from_user.full_name, message.from_user.username)
+    await message.answer(
         f"🎯 <b>Добро пожаловать, {message.from_user.first_name}!</b>\n\n"
         f"Этот бот поможет тебе получить ключ для чита Standoff 2.\n\n"
         f"📋 <b>Как получить ключ:</b>\n"
@@ -358,1732 +234,819 @@ async def cmd_start(message: types.Message):
         f"3️⃣ Отправь ссылки боту\n"
         f"4️⃣ Получи уникальный ключ активации!\n\n"
         f"📊 <b>Твой прогресс:</b> {user['video_count']}/{REQUIRED_VIDEOS}\n\n"
-        f"👇 <b>Нажми на кнопку ниже, чтобы начать!</b>"
-    )
-    
-    await message.answer(
-        welcome_text,
-        reply_markup=get_main_keyboard(),
-        parse_mode="HTML"
+        f"👇 <b>Нажми на кнопку ниже, чтобы начать!</b>",
+        reply_markup=get_main_keyboard(), parse_mode="HTML"
     )
 
 
 @dp.callback_query(F.data == "stats")
 async def callback_stats(callback: types.CallbackQuery):
-    """Показать статистику"""
     user = await get_or_create_user(callback.from_user.id)
-    
-    stats_text = (
+    await callback.answer()
+    await callback.message.answer(
         f"📊 <b>Твоя статистика</b>\n\n"
         f"🎯 Отправлено видео: <b>{user['video_count']}/{REQUIRED_VIDEOS}</b>\n"
         f"✅ Задание выполнено: {'Да' if user['is_completed'] else 'Нет'}\n"
         f"🔑 Ключ получен: {'Да' if user['key_issued'] else 'Нет'}\n"
-        f"🚫 Статус: {'Заблокирован' if user['is_banned'] else 'Активен'}"
+        f"🚫 Статус: {'Заблокирован' if user['is_banned'] else 'Активен'}",
+        parse_mode="HTML"
     )
-    
-    await callback.answer()
-    await callback.message.answer(stats_text, parse_mode="HTML")
 
 
 @dp.callback_query(F.data == "add_video")
 async def callback_add_video(callback: types.CallbackQuery, state: FSMContext):
-    """Начать добавление видео"""
     user = await get_or_create_user(callback.from_user.id)
-    
     if user['is_banned']:
         await callback.answer("❌ Ваш аккаунт заблокирован!", show_alert=True)
         return
-    
     if user['key_issued']:
         await callback.answer("✅ Вы уже получили ключ!", show_alert=True)
         return
-    
-    if user['is_completed']:
-        remaining = "ожидает проверки"
-    else:
-        remaining = f"{REQUIRED_VIDEOS - user['video_count']} видео"
-    
+    remaining = "ожидает проверки" if user['is_completed'] else f"{REQUIRED_VIDEOS - user['video_count']} видео"
     await callback.answer()
     await callback.message.answer(
-        f"📹 <b>Отправь ссылку на YouTube видео</b>\n\n"
-        f"Осталось отправить: {remaining}\n\n"
-        f"<i>Ссылка должна быть в формате:\n"
-        f"https://youtu.be/... или https://www.youtube.com/...</i>\n\n"
-        f"📌 <b>Важно:</b> В описании видео обязательно должна быть ссылка на наш канал!\n"
-        f"{CHANNEL_LINK}",
+        f"📹 <b>Отправь ссылку на YouTube видео</b>\n\nОсталось: {remaining}\n\n"
+        f"<i>Формат: https://youtu.be/... или https://www.youtube.com/...</i>\n\n"
+        f"📌 <b>Важно:</b> В комментариях должна быть ссылка на канал!\n{CHANNEL_LINK}",
         parse_mode="HTML"
     )
-    
     await state.set_state(AddVideo.waiting_for_url)
 
 
 @dp.message(AddVideo.waiting_for_url, F.text)
 async def process_video_url(message: types.Message, state: FSMContext):
-    """Обработка отправленной ссылки"""
     user = await get_or_create_user(message.from_user.id)
     url = message.text.strip()
-    
-    # Простая проверка URL
-    if not (url.startswith("https://youtu.be/") or 
-            url.startswith("https://www.youtube.com/watch?v=") or
-            url.startswith("https://youtube.com/watch?v=")):
-        await message.answer(
-            "❌ <b>Неверный формат ссылки!</b>\n\n"
-            "Пожалуйста, отправь ссылку в формате:\n"
-            "https://youtu.be/... или https://www.youtube.com/...",
-            parse_mode="HTML"
-        )
+    if not (url.startswith("https://youtu.be/") or url.startswith("https://www.youtube.com/watch?v=") or url.startswith("https://youtube.com/watch?v=")):
+        await message.answer("❌ <b>Неверный формат!</b>\n\nФормат: https://youtu.be/... или https://www.youtube.com/...", parse_mode="HTML")
         return
-    
     if user['key_issued']:
         await message.answer("✅ Вы уже получили ключ!")
         await state.clear()
         return
-    
     if user['is_completed']:
-        await message.answer(
-            "✅ Вы уже отправили все 10 видео!\n"
-            "Ожидайте проверки администратором."
-        )
+        await message.answer("✅ Все видео отправлены! Ожидайте проверки.")
         await state.clear()
         return
-    
-    # Сохраняем видео
     video_count = await add_video(message.from_user.id, url)
-    
     await message.answer(
-        f"✅ <b>Видео принято!</b>\n\n"
-        f"📊 Прогресс: {video_count}/{REQUIRED_VIDEOS}\n\n"
-        f"{'🎉 Поздравляю! Ты выполнил задание! Ожидай проверки.' if video_count >= REQUIRED_VIDEOS else 'Продолжай в том же духе!'}",
-        parse_mode="HTML",
-        reply_markup=get_main_keyboard()
+        f"✅ <b>Видео принято!</b>\n\n📊 Прогресс: {video_count}/{REQUIRED_VIDEOS}\n\n"
+        f"{'🎉 Задание выполнено! Ожидай проверки.' if video_count >= REQUIRED_VIDEOS else 'Продолжай!'}",
+        parse_mode="HTML", reply_markup=get_main_keyboard()
     )
-    
     await state.clear()
 
 
 @dp.callback_query(F.data == "get_key")
 async def callback_get_key(callback: types.CallbackQuery):
-    """Получить ключ"""
     user = await get_or_create_user(callback.from_user.id)
-    
     if user['is_banned']:
         await callback.answer("❌ Аккаунт заблокирован!", show_alert=True)
         return
-    
     if user['key_issued']:
-        # Показать существующий ключ
         async with aiosqlite.connect(DB_PATH) as db:
-            async with db.execute(
-                "SELECT key_value FROM issued_keys WHERE user_id = ?",
-                (callback.from_user.id,)
-            ) as cursor:
+            async with db.execute("SELECT key_value FROM issued_keys WHERE user_id = ?", (callback.from_user.id,)) as cursor:
                 key = await cursor.fetchone()
                 if key:
-                    await callback.answer("🔑 Ваш ключ:", show_alert=True)
-                    await callback.message.answer(
-                        f"🔑 <b>Ваш ключ активации:</b>\n\n"
-                        f"<code>{key[0]}</code>\n\n"
-                        f"<i>Скопируй его и вставь в программу!</i>\n\n"
-                        f"📥 Скачать чит: {WEBAPP_URL}",
-                        parse_mode="HTML"
-                    )
+                    await callback.answer()
+                    await callback.message.answer(f"🔑 <b>Ваш ключ:</b>\n\n<code>{key[0]}</code>\n\n📥 Скачать: {DOWNLOAD_LINK}", parse_mode="HTML")
                     return
-    
     if not user['is_completed']:
-        remaining = REQUIRED_VIDEOS - user['video_count']
-        await callback.answer(
-            f"❌ Выполните задание! Осталось: {remaining} видео",
-            show_alert=True
-        )
+        await callback.answer(f"❌ Осталось: {REQUIRED_VIDEOS - user['video_count']} видео", show_alert=True)
         return
-    
-    # Выдаем ключ
     key = await issue_key(callback.from_user.id)
-    
     if key:
         await callback.answer("🎉 Ключ выдан!", show_alert=True)
-        await callback.message.answer(
-            f"🎉 <b>Поздравляем! Вы получили ключ!</b>\n\n"
-            f"🔑 <b>Ваш ключ активации:</b>\n"
-            f"<code>{key}</code>\n\n"
-            f"📥 <b>Скачать чит:</b>\n"
-            f"{WEBAPP_URL}\n\n"
-            f"<i>Сохрани ключ, он понадобится при активации!</i>",
-            parse_mode="HTML"
-        )
+        await callback.message.answer(f"🎉 <b>Поздравляем!</b>\n\n🔑 <b>Ключ:</b>\n<code>{key}</code>\n\n📥 Скачать: {DOWNLOAD_LINK}", parse_mode="HTML")
     else:
-        await callback.message.answer(
-            "❌ Ошибка при выдаче ключа. Обратитесь к администратору."
-        )
+        await callback.message.answer("❌ Ошибка. Обратитесь к администратору.")
 
 
-# ================== FASTAPI ROUTES ==================
+# ================== FASTAPI ==================
 def validate_init_data(init_data: str) -> dict | None:
-    """Валидация данных от Telegram Mini App"""
     try:
         parsed = parse_qs(init_data)
         check_hash = parsed.get("hash", [None])[0]
         if not check_hash:
             return None
-
-        data_check_arr = []
-        for key, val in sorted(parsed.items()):
-            if key != "hash":
-                data_check_arr.append(f"{key}={val[0]}")
+        data_check_arr = [f"{k}={v[0]}" for k, v in sorted(parsed.items()) if k != "hash"]
         data_check_string = "\n".join(data_check_arr)
-
-        secret_key = hmac.new(
-            b"WebAppData", BOT_TOKEN.encode(), hashlib.sha256
-        ).digest()
-        computed_hash = hmac.new(
-            secret_key, data_check_string.encode(), hashlib.sha256
-        ).hexdigest()
-
+        secret_key = hmac.new(b"WebAppData", BOT_TOKEN.encode(), hashlib.sha256).digest()
+        computed_hash = hmac.new(secret_key, data_check_string.encode(), hashlib.sha256).hexdigest()
         if computed_hash == check_hash:
             user_data = parsed.get("user", [None])[0]
             if user_data:
                 return json.loads(unquote(user_data))
         return None
-    except Exception as e:
-        logger.error(f"Validation error: {e}")
+    except:
         return None
 
 
 @app.get("/api/user/{user_id}")
 async def api_user(user_id: int):
     try:
-        data = await get_user_data(user_id)
-        return JSONResponse(data)
+        return JSONResponse(await get_user_data(user_id))
     except Exception as e:
-        logger.error(f"Error getting user: {e}")
         raise HTTPException(500, str(e))
 
 
 @app.get("/api/stats")
 async def api_stats():
-    try:
-        data = await get_stats()
-        return JSONResponse(data)
-    except Exception as e:
-        raise HTTPException(500, str(e))
+    return JSONResponse(await get_stats())
 
 
 @app.get("/api/leaderboard")
 async def api_leaderboard():
-    try:
-        data = await get_leaderboard()
-        return JSONResponse(data)
-    except Exception as e:
-        raise HTTPException(500, str(e))
+    return JSONResponse(await get_leaderboard())
 
 
 @app.post("/api/validate")
 async def api_validate(request: Request):
     body = await request.json()
-    init_data = body.get("initData", "")
-    user = validate_init_data(init_data)
-    if user:
-        return JSONResponse({"valid": True, "user": user})
-    return JSONResponse({"valid": False})
+    user = validate_init_data(body.get("initData", ""))
+    return JSONResponse({"valid": bool(user), "user": user})
 
 
-# ================== HTML FRONTEND ==================
-HTML_TEMPLATE = """
-<!DOCTYPE html>
+# ================== HTML ==================
+HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
-    <title>AimNoob | Premium Cheat</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>AimNoob Premium</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary: #8b5cf6;
-            --primary-dark: #7c3aed;
-            --primary-light: #a78bfa;
-            --secondary: #06b6d4;
-            --accent: #f59e0b;
-            --success: #10b981;
-            --danger: #ef4444;
-            --warning: #f59e0b;
-            --dark: #0f0f1a;
-            --darker: #080810;
-            --card: rgba(15, 15, 26, 0.8);
-            --card-border: rgba(139, 92, 246, 0.2);
-            --text: #ffffff;
-            --text-secondary: rgba(255, 255, 255, 0.6);
-            --glow: 0 0 40px rgba(139, 92, 246, 0.3);
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{
+            --bg:#05050a;--card:#0d0d15;--card2:#12121c;--border:#1a1a2e;
+            --primary:#6366f1;--primary-glow:#818cf8;--secondary:#22d3ee;
+            --accent:#f43f5e;--success:#10b981;--warning:#f59e0b;
+            --text:#fff;--text2:rgba(255,255,255,.6);--text3:rgba(255,255,255,.4)
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        html{scroll-behavior:smooth}
+        body{
+            font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);
+            min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased
         }
-
-        html {
-            scroll-behavior: smooth;
+        
+        /* Background Effects */
+        .bg-effects{position:fixed;inset:0;z-index:-1;overflow:hidden}
+        .bg-grid{
+            position:absolute;inset:0;
+            background-image:linear-gradient(rgba(99,102,241,.03) 1px,transparent 1px),
+                            linear-gradient(90deg,rgba(99,102,241,.03) 1px,transparent 1px);
+            background-size:60px 60px
         }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--darker);
-            color: var(--text);
-            min-height: 100vh;
-            overflow-x: hidden;
-            position: relative;
+        .bg-glow{
+            position:absolute;width:600px;height:600px;border-radius:50%;
+            filter:blur(120px);opacity:.15;animation:float 20s ease-in-out infinite
         }
-
-        /* Animated Background */
-        .bg-animation {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            overflow: hidden;
+        .bg-glow-1{background:var(--primary);top:-200px;left:-200px}
+        .bg-glow-2{background:var(--secondary);bottom:-200px;right:-200px;animation-delay:-10s}
+        .bg-glow-3{background:var(--accent);top:50%;left:50%;transform:translate(-50%,-50%);width:400px;height:400px;animation-delay:-5s}
+        @keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-30px)}}
+        
+        /* Scanlines */
+        .scanlines{
+            position:fixed;inset:0;z-index:1000;pointer-events:none;
+            background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.03) 2px,rgba(0,0,0,.03) 4px)
         }
-
-        .bg-animation::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: 
-                radial-gradient(circle at 20% 80%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 40% 40%, rgba(245, 158, 11, 0.08) 0%, transparent 40%);
-            animation: bgRotate 30s linear infinite;
-        }
-
-        @keyframes bgRotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        .floating-orb {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(60px);
-            opacity: 0.5;
-            animation: float 20s ease-in-out infinite;
-        }
-
-        .orb-1 {
-            width: 300px;
-            height: 300px;
-            background: var(--primary);
-            top: 10%;
-            left: -10%;
-            animation-delay: 0s;
-        }
-
-        .orb-2 {
-            width: 200px;
-            height: 200px;
-            background: var(--secondary);
-            bottom: 20%;
-            right: -5%;
-            animation-delay: -7s;
-        }
-
-        .orb-3 {
-            width: 150px;
-            height: 150px;
-            background: var(--accent);
-            top: 50%;
-            left: 50%;
-            animation-delay: -14s;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0) translateX(0); }
-            25% { transform: translateY(-30px) translateX(20px); }
-            50% { transform: translateY(20px) translateX(-20px); }
-            75% { transform: translateY(-10px) translateX(30px); }
-        }
-
-        /* Grid Pattern */
-        .grid-pattern {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                linear-gradient(rgba(139, 92, 246, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(139, 92, 246, 0.03) 1px, transparent 1px);
-            background-size: 50px 50px;
-            z-index: -1;
-        }
-
+        
         /* Container */
-        .container {
-            max-width: 480px;
-            margin: 0 auto;
-            padding: 16px;
-            padding-bottom: 100px;
-        }
-
+        .app{max-width:440px;margin:0 auto;padding:16px;padding-bottom:90px;position:relative;z-index:1}
+        
         /* Header */
-        .header {
-            text-align: center;
-            padding: 24px 0;
-            margin-bottom: 20px;
+        .header{text-align:center;padding:20px 0 24px}
+        .logo{
+            display:inline-flex;align-items:center;gap:14px;
+            padding:16px 28px;background:linear-gradient(135deg,var(--card),var(--card2));
+            border-radius:20px;border:1px solid var(--border);position:relative;overflow:hidden
         }
-
-        .logo {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 8px;
+        .logo::before{
+            content:'';position:absolute;inset:0;
+            background:linear-gradient(135deg,transparent,rgba(99,102,241,.1),transparent);
+            animation:logoShine 3s ease-in-out infinite
         }
-
-        .logo-icon {
-            width: 56px;
-            height: 56px;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            box-shadow: var(--glow);
-            animation: pulse 2s ease-in-out infinite;
+        @keyframes logoShine{0%,100%{opacity:0}50%{opacity:1}}
+        .logo-icon{
+            width:52px;height:52px;background:linear-gradient(135deg,var(--primary),var(--secondary));
+            border-radius:14px;display:flex;align-items:center;justify-content:center;
+            font-size:26px;box-shadow:0 0 30px rgba(99,102,241,.5);position:relative
         }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); box-shadow: var(--glow); }
-            50% { transform: scale(1.05); box-shadow: 0 0 60px rgba(139, 92, 246, 0.5); }
+        .logo-icon::after{
+            content:'';position:absolute;inset:-2px;border-radius:16px;
+            background:linear-gradient(135deg,var(--primary),var(--secondary));
+            z-index:-1;filter:blur(10px);opacity:.5
         }
-
-        .logo-text {
-            font-size: 32px;
-            font-weight: 800;
-            background: linear-gradient(135deg, #fff, var(--primary-light));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: -1px;
+        .logo-text{
+            font-size:28px;font-weight:900;letter-spacing:-1px;
+            background:linear-gradient(135deg,#fff,var(--primary-glow));
+            -webkit-background-clip:text;-webkit-text-fill-color:transparent
         }
-
-        .header-subtitle {
-            color: var(--text-secondary);
-            font-size: 14px;
-            font-weight: 500;
+        .logo-badge{
+            position:absolute;top:-8px;right:-8px;background:var(--accent);
+            padding:4px 10px;border-radius:8px;font-size:10px;font-weight:700;
+            text-transform:uppercase;letter-spacing:.5px
         }
-
+        .version{color:var(--text3);font-size:12px;margin-top:12px;font-weight:500}
+        
         /* Status Card */
-        .status-card {
-            background: var(--card);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--card-border);
-            border-radius: 24px;
-            padding: 24px;
-            margin-bottom: 16px;
-            position: relative;
-            overflow: hidden;
+        .status-card{
+            background:var(--card);border-radius:24px;padding:24px;
+            border:1px solid var(--border);position:relative;overflow:hidden;margin-bottom:16px
         }
-
-        .status-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+        .status-card::before{
+            content:'';position:absolute;top:0;left:0;right:0;height:2px;
+            background:linear-gradient(90deg,var(--primary),var(--secondary),var(--accent))
         }
-
-        .status-card.success::before {
-            background: linear-gradient(90deg, var(--success), #34d399);
+        .status-card.success::before{background:linear-gradient(90deg,var(--success),#34d399)}
+        .status-card.warning::before{background:linear-gradient(90deg,var(--warning),#fbbf24)}
+        .status-card.danger::before{background:linear-gradient(90deg,var(--accent),#fb7185)}
+        .status-inner{display:flex;gap:18px;align-items:center}
+        .status-icon{
+            width:70px;height:70px;border-radius:20px;display:flex;align-items:center;justify-content:center;
+            font-size:36px;background:linear-gradient(135deg,rgba(99,102,241,.15),rgba(34,211,238,.1));
+            border:1px solid rgba(99,102,241,.2);flex-shrink:0
         }
-
-        .status-card.warning::before {
-            background: linear-gradient(90deg, var(--warning), #fbbf24);
+        .status-info{flex:1}
+        .status-title{font-size:20px;font-weight:800;margin-bottom:4px;letter-spacing:-.3px}
+        .status-desc{color:var(--text2);font-size:13px;line-height:1.5}
+        
+        /* Progress */
+        .progress-section{
+            background:var(--card);border-radius:24px;padding:20px;
+            border:1px solid var(--border);margin-bottom:16px
         }
-
-        .status-card.danger::before {
-            background: linear-gradient(90deg, var(--danger), #f87171);
+        .progress-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+        .progress-label{font-size:12px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.5px}
+        .progress-value{
+            font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:800;
+            background:linear-gradient(135deg,var(--primary-glow),var(--secondary));
+            -webkit-background-clip:text;-webkit-text-fill-color:transparent
         }
-
-        .status-content {
-            display: flex;
-            align-items: center;
-            gap: 16px;
+        .progress-bar{height:10px;background:var(--card2);border-radius:5px;overflow:hidden;position:relative}
+        .progress-fill{
+            height:100%;border-radius:5px;position:relative;transition:width .8s cubic-bezier(.4,0,.2,1);
+            background:linear-gradient(90deg,var(--primary),var(--secondary))
         }
-
-        .status-icon {
-            width: 64px;
-            height: 64px;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 32px;
-            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(6, 182, 212, 0.1));
-            flex-shrink: 0;
+        .progress-fill::after{
+            content:'';position:absolute;inset:0;
+            background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);
+            animation:shine 2s linear infinite
         }
-
-        .status-info {
-            flex: 1;
+        @keyframes shine{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+        .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+        .stat-box{
+            background:var(--card2);border-radius:14px;padding:14px 10px;text-align:center;
+            border:1px solid var(--border);transition:all .3s
         }
-
-        .status-title {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 4px;
+        .stat-box:hover{border-color:var(--primary);transform:translateY(-2px)}
+        .stat-num{
+            font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:700;
+            color:var(--primary-glow)
         }
-
-        .status-text {
-            color: var(--text-secondary);
-            font-size: 13px;
-            line-height: 1.4;
+        .stat-label{font-size:10px;color:var(--text3);margin-top:4px;text-transform:uppercase;letter-spacing:.3px}
+        
+        /* Nav */
+        .nav{
+            position:fixed;bottom:0;left:0;right:0;background:rgba(13,13,21,.95);
+            backdrop-filter:blur(20px);border-top:1px solid var(--border);z-index:100;
+            padding:10px 16px;padding-bottom:max(10px,env(safe-area-inset-bottom))
         }
-
-        /* Progress Section */
-        .progress-card {
-            background: var(--card);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--card-border);
-            border-radius: 24px;
-            padding: 20px;
-            margin-bottom: 16px;
+        .nav-inner{display:flex;justify-content:space-around;max-width:440px;margin:0 auto}
+        .nav-btn{
+            display:flex;flex-direction:column;align-items:center;gap:4px;
+            padding:8px 14px;border-radius:14px;cursor:pointer;transition:all .2s;
+            background:transparent;border:none;color:var(--text3);font-family:inherit
         }
-
-        .progress-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 16px;
-        }
-
-        .progress-title {
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--text-secondary);
-        }
-
-        .progress-value {
-            font-size: 24px;
-            font-weight: 800;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .progress-bar-container {
-            position: relative;
-            height: 12px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 6px;
-            overflow: hidden;
-        }
-
-        .progress-bar-fill {
-            height: 100%;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-            border-radius: 6px;
-            transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .progress-bar-fill::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(
-                90deg,
-                transparent,
-                rgba(255, 255, 255, 0.3),
-                transparent
-            );
-            animation: shimmer 2s infinite;
-        }
-
-        @keyframes shimmer {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-        }
-
-        .progress-stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-            margin-top: 16px;
-        }
-
-        .stat-item {
-            text-align: center;
-            padding: 12px 8px;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 12px;
-        }
-
-        .stat-value {
-            font-size: 20px;
-            font-weight: 700;
-            color: var(--primary-light);
-        }
-
-        .stat-label {
-            font-size: 11px;
-            color: var(--text-secondary);
-            margin-top: 2px;
-        }
-
-        /* Navigation */
-        .nav-container {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(15, 15, 26, 0.95);
-            backdrop-filter: blur(20px);
-            border-top: 1px solid var(--card-border);
-            padding: 12px 16px;
-            padding-bottom: max(12px, env(safe-area-inset-bottom));
-            z-index: 100;
-        }
-
-        .nav-tabs {
-            display: flex;
-            justify-content: space-around;
-            max-width: 480px;
-            margin: 0 auto;
-        }
-
-        .nav-tab {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 4px;
-            padding: 8px 16px;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            color: var(--text-secondary);
-            background: transparent;
-            border: none;
-            font-family: inherit;
-        }
-
-        .nav-tab:active {
-            transform: scale(0.95);
-        }
-
-        .nav-tab.active {
-            color: var(--primary);
-            background: rgba(139, 92, 246, 0.15);
-        }
-
-        .nav-tab-icon {
-            font-size: 22px;
-            line-height: 1;
-        }
-
-        .nav-tab-label {
-            font-size: 10px;
-            font-weight: 600;
-        }
-
+        .nav-btn:active{transform:scale(.95)}
+        .nav-btn.active{color:var(--primary-glow);background:rgba(99,102,241,.12)}
+        .nav-icon{font-size:22px}
+        .nav-label{font-size:10px;font-weight:600}
+        
         /* Sections */
-        .section {
-            display: none;
-            animation: fadeIn 0.3s ease;
-        }
-
-        .section.active {
-            display: block;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
+        .section{display:none;animation:fadeUp .3s ease}
+        .section.active{display:block}
+        @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+        
         /* Cards */
-        .card {
-            background: var(--card);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--card-border);
-            border-radius: 20px;
-            padding: 20px;
-            margin-bottom: 16px;
-            transition: all 0.3s ease;
+        .card{
+            background:var(--card);border-radius:20px;padding:20px;
+            border:1px solid var(--border);margin-bottom:14px
         }
-
-        .card:hover {
-            border-color: rgba(139, 92, 246, 0.4);
+        .card-header{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+        .card-icon{
+            width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+            font-size:22px;background:linear-gradient(135deg,rgba(99,102,241,.15),rgba(99,102,241,.05));
+            border:1px solid rgba(99,102,241,.2)
         }
-
-        .card-title {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 16px;
-        }
-
-        .card-title-icon {
-            font-size: 20px;
-        }
-
+        .card-title{font-size:16px;font-weight:700}
+        
         /* Steps */
-        .steps {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
+        .steps{display:flex;flex-direction:column;gap:12px}
+        .step{
+            display:flex;gap:14px;padding:16px;background:var(--card2);
+            border-radius:16px;border:1px solid var(--border);transition:all .3s
         }
-
-        .step {
-            display: flex;
-            gap: 14px;
-            padding: 16px;
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: all 0.3s ease;
+        .step:hover{border-color:rgba(99,102,241,.3);background:rgba(99,102,241,.03)}
+        .step-num{
+            width:36px;height:36px;background:linear-gradient(135deg,var(--primary),var(--primary-glow));
+            border-radius:10px;display:flex;align-items:center;justify-content:center;
+            font-size:14px;font-weight:800;flex-shrink:0;box-shadow:0 4px 15px rgba(99,102,241,.3)
         }
-
-        .step:hover {
-            background: rgba(139, 92, 246, 0.05);
-            border-color: rgba(139, 92, 246, 0.2);
+        .step-content h4{font-size:14px;font-weight:700;margin-bottom:4px}
+        .step-content p{font-size:12px;color:var(--text2);line-height:1.5}
+        
+        /* Copy Block */
+        .copy-group{margin-bottom:18px}
+        .copy-label{
+            font-size:11px;font-weight:600;color:var(--text3);margin-bottom:8px;
+            text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:6px
         }
-
-        .step-number {
-            width: 32px;
-            height: 32px;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
-            font-weight: 700;
-            flex-shrink: 0;
+        .copy-box{
+            background:var(--bg);border:1px solid var(--border);border-radius:14px;
+            padding:14px 16px;cursor:pointer;transition:all .2s;position:relative;overflow:hidden
         }
-
-        .step-content h4 {
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 4px;
+        .copy-box:hover{border-color:var(--primary);background:rgba(99,102,241,.03)}
+        .copy-box:active{transform:scale(.99)}
+        .copy-box.copied{border-color:var(--success);background:rgba(16,185,129,.05)}
+        .copy-box.copied::after{
+            content:'✓ Скопировано';position:absolute;top:50%;right:14px;
+            transform:translateY(-50%);font-size:11px;font-weight:600;color:var(--success)
         }
-
-        .step-content p {
-            font-size: 13px;
-            color: var(--text-secondary);
-            line-height: 1.5;
+        .copy-text{font-size:13px;line-height:1.6;word-break:break-word;color:var(--text)}
+        .copy-text.truncate{
+            display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden
         }
-
-        /* Buttons */
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            width: 100%;
-            padding: 16px 24px;
-            border: none;
-            border-radius: 14px;
-            font-family: inherit;
-            font-size: 15px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
+        
+        /* Videos */
+        .video-list{display:flex;flex-direction:column;gap:10px}
+        .video-item{
+            display:flex;align-items:center;gap:12px;padding:14px;
+            background:var(--card2);border-radius:14px;border:1px solid var(--border)
         }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: white;
-            box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
+        .video-num{
+            width:30px;height:30px;background:rgba(99,102,241,.15);border-radius:8px;
+            display:flex;align-items:center;justify-content:center;
+            font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;
+            color:var(--primary-glow);flex-shrink:0
         }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 30px rgba(139, 92, 246, 0.5);
+        .video-info{flex:1;min-width:0}
+        .video-link{
+            color:var(--primary-glow);text-decoration:none;font-size:12px;font-weight:500;
+            display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap
         }
-
-        .btn-primary:active {
-            transform: translateY(0);
+        .video-date{font-size:10px;color:var(--text3);margin-top:2px}
+        .video-badge{
+            padding:6px 10px;border-radius:8px;font-size:10px;font-weight:700;
+            text-transform:uppercase;letter-spacing:.3px;flex-shrink:0
         }
-
-        .btn-success {
-            background: linear-gradient(135deg, var(--success), #059669);
-            color: white;
-            box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);
+        .video-badge.pending{background:rgba(245,158,11,.15);color:var(--warning)}
+        .video-badge.approved{background:rgba(16,185,129,.15);color:var(--success)}
+        .video-badge.rejected{background:rgba(244,63,94,.15);color:var(--accent)}
+        
+        /* Key */
+        .key-display{text-align:center;padding:20px 0}
+        .key-emoji{font-size:64px;margin-bottom:16px;animation:bounce 2s ease-in-out infinite}
+        @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+        .key-title{font-size:20px;font-weight:800;margin-bottom:6px}
+        .key-subtitle{color:var(--text2);font-size:13px;margin-bottom:20px}
+        .key-box{
+            background:linear-gradient(135deg,rgba(99,102,241,.1),rgba(34,211,238,.05));
+            border:2px solid var(--primary);border-radius:16px;padding:20px;
+            cursor:pointer;transition:all .2s;margin-bottom:20px
         }
-
-        .btn-success:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 30px rgba(16, 185, 129, 0.5);
+        .key-box:hover{transform:scale(1.02);box-shadow:0 0 40px rgba(99,102,241,.2)}
+        .key-box:active{transform:scale(.98)}
+        .key-value{
+            font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;
+            color:var(--primary-glow);letter-spacing:2px
         }
-
-        .btn-outline {
-            background: transparent;
-            border: 2px solid var(--card-border);
-            color: var(--text);
-        }
-
-        .btn-outline:hover {
-            border-color: var(--primary);
-            background: rgba(139, 92, 246, 0.1);
-        }
-
-        .btn-icon {
-            font-size: 18px;
-        }
-
-        /* Copy Blocks */
-        .copy-section {
-            margin-bottom: 20px;
-        }
-
-        .copy-label {
-            font-size: 12px;
-            font-weight: 600;
-            color: var(--text-secondary);
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .copy-block {
-            background: rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            padding: 14px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .copy-block:hover {
-            background: rgba(139, 92, 246, 0.1);
-            border-color: var(--primary);
-        }
-
-        .copy-block:active {
-            transform: scale(0.98);
-        }
-
-        .copy-block-text {
-            font-size: 13px;
-            line-height: 1.6;
-            color: var(--text);
-            white-space: pre-wrap;
-            word-break: break-word;
-        }
-
-        .copy-hint {
-            position: absolute;
-            top: 8px;
-            right: 8px;
-            font-size: 10px;
-            color: var(--text-secondary);
-            background: rgba(0, 0, 0, 0.3);
-            padding: 4px 8px;
-            border-radius: 6px;
-        }
-
-        /* Video List */
-        .video-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .video-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 14px;
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 14px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: all 0.3s ease;
-        }
-
-        .video-item:hover {
-            background: rgba(139, 92, 246, 0.05);
-        }
-
-        .video-number {
-            width: 28px;
-            height: 28px;
-            background: rgba(139, 92, 246, 0.2);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            font-weight: 700;
-            color: var(--primary-light);
-            flex-shrink: 0;
-        }
-
-        .video-info {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .video-link {
-            color: var(--primary-light);
-            text-decoration: none;
-            font-size: 13px;
-            font-weight: 500;
-            display: block;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-
-        .video-date {
-            font-size: 11px;
-            color: var(--text-secondary);
-            margin-top: 2px;
-        }
-
-        .video-status {
-            padding: 6px 10px;
-            border-radius: 8px;
-            font-size: 11px;
-            font-weight: 600;
-            flex-shrink: 0;
-        }
-
-        .video-status.pending {
-            background: rgba(245, 158, 11, 0.15);
-            color: var(--warning);
-        }
-
-        .video-status.approved {
-            background: rgba(16, 185, 129, 0.15);
-            color: var(--success);
-        }
-
-        .video-status.rejected {
-            background: rgba(239, 68, 68, 0.15);
-            color: var(--danger);
-        }
-
-        /* Key Display */
-        .key-container {
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .key-icon {
-            font-size: 64px;
-            margin-bottom: 16px;
-            animation: bounce 2s ease-in-out infinite;
-        }
-
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
-        .key-box {
-            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(6, 182, 212, 0.1));
-            border: 2px solid var(--primary);
-            border-radius: 16px;
-            padding: 20px;
-            margin: 20px 0;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .key-box:hover {
-            transform: scale(1.02);
-            box-shadow: var(--glow);
-        }
-
-        .key-box:active {
-            transform: scale(0.98);
-        }
-
-        .key-value {
-            font-family: 'Courier New', monospace;
-            font-size: 20px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            color: var(--primary-light);
-        }
-
-        .key-hint {
-            font-size: 12px;
-            color: var(--text-secondary);
-            margin-top: 8px;
-        }
-
+        .key-hint{font-size:11px;color:var(--text3);margin-top:8px}
+        
         /* Leaderboard */
-        .leaderboard-list {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
+        .leader-list{display:flex;flex-direction:column;gap:8px}
+        .leader-item{
+            display:flex;align-items:center;gap:12px;padding:12px 14px;
+            background:var(--card2);border-radius:14px;border:1px solid var(--border)
         }
-
-        .leaderboard-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 14px;
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 14px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: all 0.3s ease;
+        .leader-item.me{background:rgba(99,102,241,.08);border-color:var(--primary)}
+        .leader-item.top{background:linear-gradient(135deg,rgba(245,158,11,.08),rgba(245,158,11,.02));border-color:rgba(245,158,11,.3)}
+        .leader-rank{
+            width:36px;height:36px;display:flex;align-items:center;justify-content:center;
+            font-size:18px;flex-shrink:0
         }
-
-        .leaderboard-item.is-me {
-            background: rgba(139, 92, 246, 0.1);
-            border-color: var(--primary);
+        .leader-rank.num{
+            font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;
+            color:var(--text3);background:rgba(255,255,255,.03);border-radius:10px
         }
-
-        .leaderboard-item.top-3 {
-            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.05));
-            border-color: rgba(245, 158, 11, 0.3);
+        .leader-user{flex:1;min-width:0}
+        .leader-name{font-size:14px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+        .leader-username{font-size:11px;color:var(--text3)}
+        .leader-score{text-align:right;flex-shrink:0}
+        .leader-count{font-family:'JetBrains Mono',monospace;font-size:16px;font-weight:700;color:var(--primary-glow)}
+        .leader-badge{font-size:14px;margin-top:2px}
+        
+        /* Buttons */
+        .btn{
+            display:flex;align-items:center;justify-content:center;gap:10px;
+            width:100%;padding:16px;border:none;border-radius:14px;
+            font-family:inherit;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s
         }
-
-        .leaderboard-rank {
-            width: 36px;
-            height: 36px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            flex-shrink: 0;
+        .btn:active{transform:scale(.98)}
+        .btn-primary{
+            background:linear-gradient(135deg,var(--primary),#4f46e5);color:#fff;
+            box-shadow:0 4px 20px rgba(99,102,241,.4)
         }
-
-        .leaderboard-rank.number {
-            font-size: 14px;
-            font-weight: 700;
-            color: var(--text-secondary);
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 10px;
+        .btn-primary:hover{box-shadow:0 6px 30px rgba(99,102,241,.5);transform:translateY(-2px)}
+        .btn-success{
+            background:linear-gradient(135deg,var(--success),#059669);color:#fff;
+            box-shadow:0 4px 20px rgba(16,185,129,.4)
         }
-
-        .leaderboard-user {
-            flex: 1;
-            min-width: 0;
+        .btn-outline{background:transparent;border:2px solid var(--border);color:var(--text)}
+        .btn-outline:hover{border-color:var(--primary);background:rgba(99,102,241,.05)}
+        
+        /* Alert */
+        .alert{
+            padding:14px 16px;border-radius:14px;font-size:12px;
+            display:flex;align-items:flex-start;gap:10px;margin-top:16px;line-height:1.5
         }
-
-        .leaderboard-name {
-            font-size: 14px;
-            font-weight: 600;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-
-        .leaderboard-username {
-            font-size: 12px;
-            color: var(--text-secondary);
-        }
-
-        .leaderboard-score {
-            text-align: right;
-            flex-shrink: 0;
-        }
-
-        .leaderboard-videos {
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--primary-light);
-        }
-
-        .leaderboard-badge {
-            font-size: 16px;
-            margin-top: 2px;
-        }
-
-        /* Alert Box */
-        .alert {
-            padding: 14px 16px;
-            border-radius: 12px;
-            font-size: 13px;
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            margin-top: 16px;
-        }
-
-        .alert-warning {
-            background: rgba(245, 158, 11, 0.1);
-            border: 1px solid rgba(245, 158, 11, 0.3);
-            color: #fcd34d;
-        }
-
-        .alert-icon {
-            font-size: 16px;
-            flex-shrink: 0;
-        }
-
-        /* Empty State */
-        .empty-state {
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        .empty-icon {
-            font-size: 48px;
-            margin-bottom: 12px;
-            opacity: 0.5;
-        }
-
-        .empty-text {
-            color: var(--text-secondary);
-            font-size: 14px;
-        }
-
+        .alert-warning{background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.2);color:#fcd34d}
+        .alert-icon{font-size:16px;flex-shrink:0}
+        
+        /* Empty */
+        .empty{text-align:center;padding:40px 20px}
+        .empty-icon{font-size:48px;margin-bottom:12px;opacity:.4}
+        .empty-text{color:var(--text3);font-size:13px}
+        
         /* Toast */
-        .toast {
-            position: fixed;
-            bottom: 100px;
-            left: 50%;
-            transform: translateX(-50%) translateY(100px);
-            background: var(--primary);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 12px;
-            font-size: 14px;
-            font-weight: 600;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-            opacity: 0;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+        .toast{
+            position:fixed;bottom:100px;left:50%;transform:translateX(-50%) translateY(100px);
+            background:var(--primary);color:#fff;padding:12px 24px;border-radius:14px;
+            font-size:14px;font-weight:600;box-shadow:0 10px 40px rgba(0,0,0,.4);
+            z-index:1000;opacity:0;transition:all .3s;display:flex;align-items:center;gap:8px
         }
-
-        .toast.show {
-            opacity: 1;
-            transform: translateX(-50%) translateY(0);
-        }
-
+        .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+        
         /* Loading */
-        .loading {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 40px;
+        .loading{display:flex;justify-content:center;padding:40px}
+        .spinner{
+            width:36px;height:36px;border:3px solid var(--border);
+            border-top-color:var(--primary);border-radius:50%;animation:spin 1s linear infinite
         }
-
-        .spinner {
-            width: 40px;
-            height: 40px;
-            border: 3px solid rgba(139, 92, 246, 0.2);
-            border-top-color: var(--primary);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
-        /* Scrollbar */
-        ::-webkit-scrollbar {
-            width: 4px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: var(--primary);
-            border-radius: 2px;
-        }
-
-        /* Responsive */
-        @media (max-width: 380px) {
-            .container {
-                padding: 12px;
-            }
-            
-            .logo-text {
-                font-size: 26px;
-            }
-            
-            .progress-value {
-                font-size: 20px;
-            }
-        }
+        @keyframes spin{to{transform:rotate(360deg)}}
     </style>
 </head>
 <body>
-    <!-- Animated Background -->
-    <div class="bg-animation">
-        <div class="floating-orb orb-1"></div>
-        <div class="floating-orb orb-2"></div>
-        <div class="floating-orb orb-3"></div>
+    <div class="bg-effects">
+        <div class="bg-grid"></div>
+        <div class="bg-glow bg-glow-1"></div>
+        <div class="bg-glow bg-glow-2"></div>
+        <div class="bg-glow bg-glow-3"></div>
     </div>
-    <div class="grid-pattern"></div>
-
-    <div class="container">
-        <!-- Header -->
+    <div class="scanlines"></div>
+    
+    <div class="app">
         <header class="header">
             <div class="logo">
                 <div class="logo-icon">🎯</div>
                 <span class="logo-text">AimNoob</span>
+                <span class="logo-badge">PRO</span>
             </div>
-            <div class="header-subtitle">Premium Cheat for Standoff 2</div>
+            <div class="version">Standoff 2 Cheat • v0.37.1</div>
         </header>
-
-        <!-- Status Card -->
+        
         <div class="status-card" id="statusCard">
-            <div class="status-content">
+            <div class="status-inner">
                 <div class="status-icon" id="statusIcon">🎮</div>
                 <div class="status-info">
                     <div class="status-title" id="statusTitle">Загрузка...</div>
-                    <div class="status-text" id="statusText">Получение данных</div>
+                    <div class="status-desc" id="statusDesc">Получение данных</div>
                 </div>
             </div>
         </div>
-
-        <!-- Progress Card -->
-        <div class="progress-card">
-            <div class="progress-header">
-                <span class="progress-title">ПРОГРЕСС ЗАДАНИЯ</span>
-                <span class="progress-value" id="progressValue">0/""" + str(REQUIRED_VIDEOS) + """</span>
+        
+        <div class="progress-section">
+            <div class="progress-top">
+                <span class="progress-label">Прогресс</span>
+                <span class="progress-value" id="progressValue">0/10</span>
             </div>
-            <div class="progress-bar-container">
-                <div class="progress-bar-fill" id="progressFill" style="width: 0%"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width:0%"></div>
             </div>
-            <div class="progress-stats">
-                <div class="stat-item">
-                    <div class="stat-value" id="statSent">0</div>
+            <div class="stats-row">
+                <div class="stat-box">
+                    <div class="stat-num" id="statSent">0</div>
                     <div class="stat-label">Отправлено</div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-value" id="statPending">0</div>
-                    <div class="stat-label">На проверке</div>
+                <div class="stat-box">
+                    <div class="stat-num" id="statPending">0</div>
+                    <div class="stat-label">Проверка</div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-value" id="statApproved">0</div>
+                <div class="stat-box">
+                    <div class="stat-num" id="statApproved">0</div>
                     <div class="stat-label">Принято</div>
                 </div>
             </div>
         </div>
-
-        <!-- Sections -->
+        
         <div id="taskSection" class="section active">
             <div class="card">
-                <div class="card-title">
-                    <span class="card-title-icon">📋</span>
-                    Как получить ключ
+                <div class="card-header">
+                    <div class="card-icon">📋</div>
+                    <div class="card-title">Инструкция</div>
                 </div>
                 <div class="steps">
                     <div class="step">
-                        <div class="step-number">1</div>
+                        <div class="step-num">1</div>
                         <div class="step-content">
                             <h4>Найди видео</h4>
-                            <p>Скачай видео из TikTok или Telegram каналов на тему чита Standoff 2. Видео должны быть БЕЗ водяных знаков.</p>
+                            <p>Берёшь видосы с TikTok из ТГ каналов с читом 0.37.1. Без водных знаков и тэгов</p>
                         </div>
                     </div>
                     <div class="step">
-                        <div class="step-number">2</div>
+                        <div class="step-num">2</div>
                         <div class="step-content">
-                            <h4>Загрузи на YouTube</h4>
-                            <p>Выложи как обычное видео (НЕ Shorts). Используй название и описание из раздела «Данные».</p>
+                            <h4>Выкладывай на YouTube</h4>
+                            <p>Вставляешь описание, название и ссылку в комментариях (без неё не будет выдачи софта)</p>
                         </div>
                     </div>
                     <div class="step">
-                        <div class="step-number">3</div>
+                        <div class="step-num">3</div>
                         <div class="step-content">
-                            <h4>Отправь ссылку</h4>
-                            <p>Скопируй ссылку на видео и отправь боту. Повтори """ + str(REQUIRED_VIDEOS) + """ раз и получи ключ!</p>
+                            <h4>Как обычный ролик</h4>
+                            <p>Выкладываешь его в ютуб как обычный ролик (НЕ Shorts!)</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">4</div>
+                        <div class="step-content">
+                            <h4>Скидывай ссылку</h4>
+                            <p>После того как выложил — скидывай ссылку на видос боту</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">5</div>
+                        <div class="step-content">
+                            <h4>Проверка</h4>
+                            <p>Я смотрю всё ли верно — описание, название, комментарий</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">6</div>
+                        <div class="step-content">
+                            <h4>Получи чит</h4>
+                            <p>Выкладываешь ровно 10 разных видосов, говоришь "всё готово" — получаешь чит и ключ</p>
                         </div>
                     </div>
                 </div>
-                
                 <div class="alert alert-warning">
                     <span class="alert-icon">⚠️</span>
-                    <span>В комментариях к видео обязательно оставь ссылку на наш Telegram канал!</span>
+                    <span>Без ссылки в комментариях на ТГК выдачи НЕ будет! Это обязательное условие.</span>
                 </div>
-                
-                <button class="btn btn-primary" onclick="openBot()" style="margin-top: 20px;">
-                    <span class="btn-icon">📤</span>
-                    Отправить видео боту
+                <button class="btn btn-primary" onclick="openBot()" style="margin-top:18px">
+                    <span>📤</span> Отправить видео боту
                 </button>
             </div>
         </div>
-
+        
         <div id="dataSection" class="section">
             <div class="card">
-                <div class="card-title">
-                    <span class="card-title-icon">📝</span>
-                    Данные для видео
+                <div class="card-header">
+                    <div class="card-icon">📝</div>
+                    <div class="card-title">Данные для видео</div>
                 </div>
                 
-                <div class="copy-section">
-                    <div class="copy-label">
-                        <span>🎬</span> Название видео
-                    </div>
-                    <div class="copy-block" onclick="copyText(videoTitle, this)">
-                        <div class="copy-block-text" id="videoTitleText"></div>
-                        <span class="copy-hint">Нажми чтобы скопировать</span>
+                <div class="copy-group">
+                    <div class="copy-label"><span>🎬</span> Название</div>
+                    <div class="copy-box" onclick="copyText(videoTitle,this)" id="titleBox">
+                        <div class="copy-text" id="titleText"></div>
                     </div>
                 </div>
                 
-                <div class="copy-section">
-                    <div class="copy-label">
-                        <span>📄</span> Описание
-                    </div>
-                    <div class="copy-block" onclick="copyText(videoDescription, this)">
-                        <div class="copy-block-text" id="videoDescText"></div>
-                        <span class="copy-hint">Нажми чтобы скопировать</span>
+                <div class="copy-group">
+                    <div class="copy-label"><span>📄</span> Описание (вставить в описание)</div>
+                    <div class="copy-box" onclick="copyText(videoDesc,this)" id="descBox">
+                        <div class="copy-text truncate" id="descText"></div>
                     </div>
                 </div>
                 
-                <div class="copy-section">
-                    <div class="copy-label">
-                        <span>💬</span> Комментарий
-                    </div>
-                    <div class="copy-block" onclick="copyText(commentText, this)">
-                        <div class="copy-block-text" id="commentTextEl"></div>
-                        <span class="copy-hint">Нажми чтобы скопировать</span>
+                <div class="copy-group">
+                    <div class="copy-label"><span>💬</span> Комментарий (оставить под видео)</div>
+                    <div class="copy-box" onclick="copyText(commentText,this)" id="commentBox">
+                        <div class="copy-text" id="commentTextEl"></div>
                     </div>
                 </div>
                 
-                <div class="copy-section">
-                    <div class="copy-label">
-                        <span>🏷️</span> Теги
-                    </div>
-                    <div class="copy-block" onclick="copyText(tagsText, this)">
-                        <div class="copy-block-text" id="tagsTextEl"></div>
-                        <span class="copy-hint">Нажми чтобы скопировать</span>
+                <div class="copy-group">
+                    <div class="copy-label"><span>🏷️</span> Теги</div>
+                    <div class="copy-box" onclick="copyText(tagsText,this)" id="tagsBox">
+                        <div class="copy-text truncate" id="tagsTextEl"></div>
                     </div>
                 </div>
             </div>
         </div>
-
+        
         <div id="videosSection" class="section">
             <div class="card">
-                <div class="card-title">
-                    <span class="card-title-icon">📹</span>
-                    Мои видео
+                <div class="card-header">
+                    <div class="card-icon">📹</div>
+                    <div class="card-title">Мои видео</div>
                 </div>
                 <div id="videosList" class="video-list">
                     <div class="loading"><div class="spinner"></div></div>
                 </div>
             </div>
         </div>
-
+        
         <div id="keySection" class="section">
             <div class="card" id="keyContent">
                 <div class="loading"><div class="spinner"></div></div>
             </div>
         </div>
-
+        
         <div id="topSection" class="section">
             <div class="card">
-                <div class="card-title">
-                    <span class="card-title-icon">🏆</span>
-                    Таблица лидеров
+                <div class="card-header">
+                    <div class="card-icon">🏆</div>
+                    <div class="card-title">Топ участников</div>
                 </div>
-                <div id="leaderboardList" class="leaderboard-list">
+                <div id="leaderboardList" class="leader-list">
                     <div class="loading"><div class="spinner"></div></div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Bottom Navigation -->
-    <nav class="nav-container">
-        <div class="nav-tabs">
-            <button class="nav-tab active" onclick="switchTab('task')">
-                <span class="nav-tab-icon">📋</span>
-                <span class="nav-tab-label">Задание</span>
+    
+    <nav class="nav">
+        <div class="nav-inner">
+            <button class="nav-btn active" onclick="switchTab('task')">
+                <span class="nav-icon">📋</span>
+                <span class="nav-label">Задание</span>
             </button>
-            <button class="nav-tab" onclick="switchTab('data')">
-                <span class="nav-tab-icon">📝</span>
-                <span class="nav-tab-label">Данные</span>
+            <button class="nav-btn" onclick="switchTab('data')">
+                <span class="nav-icon">📝</span>
+                <span class="nav-label">Данные</span>
             </button>
-            <button class="nav-tab" onclick="switchTab('videos')">
-                <span class="nav-tab-icon">📹</span>
-                <span class="nav-tab-label">Видео</span>
+            <button class="nav-btn" onclick="switchTab('videos')">
+                <span class="nav-icon">📹</span>
+                <span class="nav-label">Видео</span>
             </button>
-            <button class="nav-tab" onclick="switchTab('key')">
-                <span class="nav-tab-icon">🔑</span>
-                <span class="nav-tab-label">Ключ</span>
+            <button class="nav-btn" onclick="switchTab('key')">
+                <span class="nav-icon">🔑</span>
+                <span class="nav-label">Ключ</span>
             </button>
-            <button class="nav-tab" onclick="switchTab('top')">
-                <span class="nav-tab-icon">🏆</span>
-                <span class="nav-tab-label">Топ</span>
+            <button class="nav-btn" onclick="switchTab('top')">
+                <span class="nav-icon">🏆</span>
+                <span class="nav-label">Топ</span>
             </button>
         </div>
     </nav>
+    
+    <div class="toast" id="toast"><span id="toastIcon">✓</span><span id="toastText">Скопировано</span></div>
 
-    <!-- Toast -->
-    <div class="toast" id="toast">
-        <span id="toastIcon">✅</span>
-        <span id="toastText">Скопировано!</span>
-    </div>
+<script>
+const REQUIRED=10;
+const CHANNEL='https://t.me/AimNooBsoft';
+const DOWNLOAD='https://t.me/AimNooBsoft';
 
-    <script>
-        // Constants
-        const REQUIRED = """ + str(REQUIRED_VIDEOS) + """;
-        const CHANNEL_LINK = '""" + CHANNEL_LINK + """';
-        const DOWNLOAD_LINK = '""" + DOWNLOAD_LINK + """';
-        
-        // Video data
-        const videoTitle = `""" + VIDEO_TITLE + """`;
-        const videoDescription = `""" + VIDEO_DESCRIPTION + """`;
-        const commentText = `""" + COMMENT_TEXT + """`;
-        const tagsText = `""" + TAGS + """`;
-        
-        // State
-        let userData = null;
-        let userId = null;
-        
-        // Telegram WebApp
-        const tg = window.Telegram?.WebApp;
-        if (tg) {
-            tg.ready();
-            tg.expand();
-            tg.setHeaderColor('#080810');
-            tg.setBackgroundColor('#080810');
-            
-            if (tg.initDataUnsafe?.user) {
-                userId = tg.initDataUnsafe.user.id;
-            }
-        }
-        
-        // Fallback for testing
-        if (!userId) {
-            const params = new URLSearchParams(window.location.search);
-            userId = params.get('user_id');
-        }
-        
-        // Initialize text content
-        document.getElementById('videoTitleText').textContent = videoTitle;
-        document.getElementById('videoDescText').textContent = videoDescription.substring(0, 200) + '...';
-        document.getElementById('commentTextEl').textContent = commentText;
-        document.getElementById('tagsTextEl').textContent = tagsText.substring(0, 100) + '...';
-        
-        // Load user data
-        async function loadUserData() {
-            if (!userId) {
-                updateStatus('error', '❌', 'Ошибка авторизации', 'Откройте приложение через Telegram бота');
-                return;
-            }
-            
-            try {
-                const res = await fetch(`/api/user/${userId}`);
-                userData = await res.json();
-                renderAll();
-            } catch (e) {
-                console.error(e);
-                updateStatus('error', '❌', 'Ошибка загрузки', 'Не удалось получить данные');
-            }
-        }
-        
-        // Load leaderboard
-        async function loadLeaderboard() {
-            try {
-                const res = await fetch('/api/leaderboard');
-                const data = await res.json();
-                renderLeaderboard(data);
-            } catch (e) {
-                console.error(e);
-                document.getElementById('leaderboardList').innerHTML = `
-                    <div class="empty-state">
-                        <div class="empty-icon">❌</div>
-                        <div class="empty-text">Не удалось загрузить данные</div>
-                    </div>
-                `;
-            }
-        }
-        
-        // Update status card
-        function updateStatus(type, icon, title, text) {
-            const card = document.getElementById('statusCard');
-            const iconEl = document.getElementById('statusIcon');
-            const titleEl = document.getElementById('statusTitle');
-            const textEl = document.getElementById('statusText');
-            
-            card.className = 'status-card ' + type;
-            iconEl.textContent = icon;
-            titleEl.textContent = title;
-            textEl.textContent = text;
-        }
-        
-        // Render all
-        function renderAll() {
-            if (!userData) return;
-            
-            const count = userData.video_count || 0;
-            const percent = Math.min((count / REQUIRED) * 100, 100);
-            
-            // Progress
-            document.getElementById('progressFill').style.width = `${percent}%`;
-            document.getElementById('progressValue').textContent = `${count}/${REQUIRED}`;
-            
-            // Stats
-            const videos = userData.videos || [];
-            const pending = videos.filter(v => v.status === 'pending').length;
-            const approved = videos.filter(v => v.status === 'approved').length;
-            
-            document.getElementById('statSent').textContent = count;
-            document.getElementById('statPending').textContent = pending;
-            document.getElementById('statApproved').textContent = approved;
-            
-            // Status
-            if (userData.is_banned) {
-                updateStatus('danger', '🚫', 'Аккаунт заблокирован', 'Обратитесь к администратору для разблокировки');
-            } else if (userData.key_issued && userData.key) {
-                updateStatus('success', '🎉', 'Ключ получен!', 'Скачай чит и активируй его с помощью ключа');
-            } else if (userData.is_completed) {
-                updateStatus('warning', '⏳', 'Ожидание проверки', 'Все видео отправлены. Администратор скоро проверит');
-            } else if (count > 0) {
-                updateStatus('', '🔥', 'Продолжай работать!', `Осталось отправить ${REQUIRED - count} видео`);
-            } else {
-                updateStatus('', '🎮', 'Добро пожаловать!', 'Выполни задание и получи доступ к читу');
-            }
-            
-            renderVideos();
-            renderKey();
-        }
-        
-        // Render videos
-        function renderVideos() {
-            const container = document.getElementById('videosList');
-            const videos = userData?.videos || [];
-            
-            if (videos.length === 0) {
-                container.innerHTML = `
-                    <div class="empty-state">
-                        <div class="empty-icon">📭</div>
-                        <div class="empty-text">Вы еще не отправили ни одного видео</div>
-                    </div>
-                `;
-                return;
-            }
-            
-            let html = '';
-            videos.forEach((v, i) => {
-                const statusClass = v.status === 'approved' ? 'approved' : v.status === 'rejected' ? 'rejected' : 'pending';
-                const statusText = v.status === 'approved' ? '✓ Принято' : v.status === 'rejected' ? '✗ Отклонено' : '⏳ Проверка';
-                const date = v.submitted_at ? new Date(v.submitted_at).toLocaleDateString('ru-RU') : '';
-                
-                html += `
-                    <div class="video-item">
-                        <div class="video-number">${i + 1}</div>
-                        <div class="video-info">
-                            <a href="${v.video_url}" target="_blank" class="video-link">${v.video_url}</a>
-                            <div class="video-date">${date}</div>
-                        </div>
-                        <div class="video-status ${statusClass}">${statusText}</div>
-                    </div>
-                `;
-            });
-            
-            container.innerHTML = html;
-        }
-        
-        // Render key
-        function renderKey() {
-            const container = document.getElementById('keyContent');
-            
-            if (userData?.key) {
-                container.innerHTML = `
-                    <div class="key-container">
-                        <div class="key-icon">🔑</div>
-                        <h3 style="font-size: 20px; margin-bottom: 8px;">Ваш ключ активации</h3>
-                        <p style="color: var(--text-secondary); font-size: 14px;">Нажмите чтобы скопировать</p>
-                        <div class="key-box" onclick="copyKey()">
-                            <div class="key-value">${userData.key}</div>
-                            <div class="key-hint">Tap to copy</div>
-                        </div>
-                        <button class="btn btn-success" onclick="window.open('${DOWNLOAD_LINK}', '_blank')">
-                            <span class="btn-icon">📥</span>
-                            Скачать AimNoob
-                        </button>
-                        <button class="btn btn-outline" onclick="window.open('${CHANNEL_LINK}', '_blank')" style="margin-top: 10px;">
-                            <span class="btn-icon">📢</span>
-                            Наш Telegram канал
-                        </button>
-                        <div class="alert alert-warning" style="margin-top: 16px;">
-                            <span class="alert-icon">🔒</span>
-                            <span>Ключ одноразовый — никому не передавай!</span>
-                        </div>
-                    </div>
-                `;
-            } else if (userData?.is_completed) {
-                container.innerHTML = `
-                    <div class="key-container">
-                        <div class="key-icon">⏳</div>
-                        <h3 style="font-size: 20px; margin-bottom: 8px;">Ожидание проверки</h3>
-                        <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
-                            Все видео успешно отправлены!<br>
-                            Администратор проверит их и выдаст ключ.<br>
-                            Обычно это занимает до 24 часов.
-                        </p>
-                        <button class="btn btn-outline" onclick="window.open('${CHANNEL_LINK}', '_blank')" style="margin-top: 20px;">
-                            <span class="btn-icon">📢</span>
-                            Следить за новостями
-                        </button>
-                    </div>
-                `;
-            } else {
-                const remaining = REQUIRED - (userData?.video_count || 0);
-                container.innerHTML = `
-                    <div class="key-container">
-                        <div class="key-icon">🔒</div>
-                        <h3 style="font-size: 20px; margin-bottom: 8px;">Ключ пока недоступен</h3>
-                        <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
-                            Для получения ключа нужно отправить<br>
-                            ещё <strong style="color: var(--primary-light);">${remaining}</strong> видео
-                        </p>
-                        <button class="btn btn-primary" onclick="openBot()" style="margin-top: 20px;">
-                            <span class="btn-icon">📤</span>
-                            Продолжить задание
-                        </button>
-                    </div>
-                `;
-            }
-        }
-        
-        // Render leaderboard
-        function renderLeaderboard(data) {
-            const container = document.getElementById('leaderboardList');
-            
-            if (!data || data.length === 0) {
-                container.innerHTML = `
-                    <div class="empty-state">
-                        <div class="empty-icon">🏆</div>
-                        <div class="empty-text">Пока никто не отправлял видео</div>
-                    </div>
-                `;
-                return;
-            }
-            
-            const medals = ['🥇', '🥈', '🥉'];
-            let html = '';
-            
-            data.forEach((user, i) => {
-                const isMe = user.user_id == userId;
-                const isTop3 = i < 3;
-                let badge = '';
-                if (user.key_issued) badge = '🔑';
-                else if (user.is_completed) badge = '✅';
-                
-                html += `
-                    <div class="leaderboard-item ${isMe ? 'is-me' : ''} ${isTop3 ? 'top-3' : ''}">
-                        <div class="leaderboard-rank ${!isTop3 ? 'number' : ''}">${isTop3 ? medals[i] : i + 1}</div>
-                        <div class="leaderboard-user">
-                            <div class="leaderboard-name">${user.full_name || 'User'}${isMe ? ' (Вы)' : ''}</div>
-                            <div class="leaderboard-username">@${user.username || '—'}</div>
-                        </div>
-                        <div class="leaderboard-score">
-                            <div class="leaderboard-videos">${user.video_count}/${REQUIRED}</div>
-                            <div class="leaderboard-badge">${badge}</div>
-                        </div>
-                    </div>
-                `;
-            });
-            
-            container.innerHTML = html;
-        }
-        
-        // Switch tabs
-        function switchTab(tab) {
-            // Update nav
-            document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
-            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-            
-            const tabs = ['task', 'data', 'videos', 'key', 'top'];
-            const index = tabs.indexOf(tab);
-            if (index >= 0) {
-                document.querySelectorAll('.nav-tab')[index].classList.add('active');
-                document.getElementById(`${tab}Section`).classList.add('active');
-            }
-            
-            // Load leaderboard when switching to top
-            if (tab === 'top') {
-                loadLeaderboard();
-            }
-            
-            // Haptic feedback
-            if (tg?.HapticFeedback) {
-                tg.HapticFeedback.selectionChanged();
-            }
-        }
-        
-        // Copy text
-        function copyText(text, element) {
-            navigator.clipboard.writeText(text).then(() => {
-                showToast('✅', 'Скопировано!');
-                if (tg?.HapticFeedback) {
-                    tg.HapticFeedback.notificationOccurred('success');
-                }
-            }).catch(() => {
-                showToast('❌', 'Ошибка копирования');
-            });
-        }
-        
-        // Copy key
-        function copyKey() {
-            if (userData?.key) {
-                navigator.clipboard.writeText(userData.key).then(() => {
-                    showToast('🔑', 'Ключ скопирован!');
-                    if (tg?.HapticFeedback) {
-                        tg.HapticFeedback.notificationOccurred('success');
-                    }
-                });
-            }
-        }
-        
-        // Show toast
-        function showToast(icon, text) {
-            const toast = document.getElementById('toast');
-            const toastIcon = document.getElementById('toastIcon');
-            const toastText = document.getElementById('toastText');
-            
-            toastIcon.textContent = icon;
-            toastText.textContent = text;
-            toast.classList.add('show');
-            
-            setTimeout(() => {
-                toast.classList.remove('show');
-            }, 2000);
-        }
-        
-        // Open bot
-        function openBot() {
-            if (tg) {
-                tg.close();
-            } else {
-                window.open('https://t.me/AimNooBBot', '_blank');
-            }
-        }
-        
-        // Initialize
-        loadUserData();
-    </script>
+const videoTitle=`⚡️КАК СКАЧАТЬ ЧИТ 0.37.1 STANDOFF 2 БЕЗ РУТ И БАНА ПОЛНАЯ УСТАНОВКА`;
+
+const videoDesc=`👉СКАЧАТЬ ТУТ ТГК: https://t.me/AimNooBsoft
+👉СКАЧАТЬ ТУТ ТГК: https://t.me/AimNooBsoft
+👉СКАЧАТЬ ТУТ ТГК: https://t.me/AimNooBsoft
+👉СКАЧАТЬ ТУТ ТГК: https://t.me/AimNooBsoft
+
+
+standoff 2, стандофф, standoff, стендофф, standoff2, веля, стендофф 2, стэндофф 2, стендоф, стэндофф, standof, стандофф2, стандоф, рик, обнова 0.37.1, обновление 0.37.1, kasai_standoff2, стандофф обновление, со2, so2, стандоф 2, стендофф2, 0.37.1 стандофф 2, стендов, стандофф 2 0.37.1, 0.37.1, в стандофф 2, standoff 2 0.37.1, ric, скрафтил аркану, крафт стандофф 2, мем стандофф, мем стандофф 2, девушка в стандофф 2, wonderfull shorts, софт касай, казашка, kazashka, мафиозник, kasai софт, kasai shorts, fragmovie standoff, фрагмуви стандофф, apollon standoff 2, apollon shorts, казашка стандофф 2, мафиозник и казашка, мемы стандофф 2, мемы стандофф 2 шортс, мемы стандофф 2 без мата, смешные моменты стандофф 2, стандофф 2 мемы шортс, юкан, шортс, казашка standoff 2, казашка стандофф, девушка играет в стандофф, shorts, крафт арканы standoff 2, standoff 2 full allies gameplay, лучший игрок на телефоне в стандофф 2, fragmovie standoff 2, мувик стандофф 2, ipad pro 2020 standoff 2, айфон 7 стандофф 2, ipad pro 2021 standoff 2, frontos, лучший игрок с телефона standoff 2, мувики стандофф 2, фрагмуви стандофф 2, standoff 2 fragmovie, айпад 9 стандофф 2, стандофф 2 фрагмуви, стандофф 2 мувик, айпад 2021 стандофф 2, ipad pro 2018 standoff 2, best player standoff 2, m9 bayonet standoff 2, стендоф 2, обзор обновления 0.37.1, standoff 2 allies legend, standoff 2 allies gameplay, standoff 2 full competitive match gameplay, standoff 2 competitive gameplay, standoff 2 allies, standoff 2 ranked, standoff 2 settings, standoff 2 competitive, мувик, девушка, веля standoff 2, веля стандофф 2, читы стандофф2, hacking, root, cheating, cheats, hack, hacks, cheat, standoff 2 0.37.1, standoff 0.37.1, скачать 0.37.1, стандофф 2 читы, стандофф 2 читы на телефон, как скачать читы на стандофф 2, чит стандофф 2, как скачать читы на стандофф 2 0.37.1, читы стандофф 2, чит на стандофф, стандофф 2 чит, чит на standoff 2, standoff 2 читы, скачать читы на стандофф 2, standoff 2 чит, как скачать читы на standoff 2 0.37.1, чит на standoff 2 0.37.1, читы на standoff 2, читы standoff 2, читы на стандофф 2 0.37.1, чит на стандофф 2, читы на standoff 2 0.37.1, standoff читы, читы на стандофф 2, читы, обновление, обнова стандофф, эйс, дата выхода обновления 0.37.1, скачать обновление, дата 0.37.1, что добавят 0.37.1, трейд, трейд в стандофф 2, стандофф 2, fragmovie, standoff, standoff 2 fragmovie, fragmovie standoff 2, стандофф, мувик стандофф 2, standoff2, фрагмуви, фрагмуви стандофф 2, стандофф 2 фрагмуви, стендофф 2, мувики стандофф 2, стэндофф 2, highlights, фрагмувик, standoff 2 0.37.1, чит на standoff 2 0.37.1, как скачать читы на standoff 2 0.37.1, shooter, fps, бесплатно, standoff читы, античит, скачать читы, бан, шутер от первого лица, читы на стандофф 2 0.37.1, читеры, стандофф 2 0.37.1, 0.37.1
+
+Скачать тут https://t.me/AimNooBsoft`;
+
+const commentText=`👉СКАЧАТЬ ТУТ ТГК: https://t.me/AimNooBsoft
+👉СКАЧАТЬ ТУТ ТГК: https://t.me/AimNooBsoft
+👉СКАЧАТЬ ТУТ ТГК: https://t.me/AimNooBsoft
+👉СКАЧАТЬ ТУТ ТГК: https://t.me/AimNooBsoft`;
+
+const tagsText=`standoff 2, стандофф, standoff, стендофф, standoff2, стендофф 2, стэндофф 2, обнова 0.37.1, обновление 0.37.1, стандофф 2 0.37.1, standoff 2 0.37.1, чит стандофф 2, читы стандофф 2, чит на standoff 2, standoff 2 читы, чит на standoff 2 0.37.1, читы на standoff 2, читы на стандофф 2 0.37.1, чит на стандофф 2, standoff читы, читы на стандофф 2, читы, hacking, cheating, cheats, hack, hacks, cheat, скачать читы на стандофф 2, standoff 2 чит, как скачать читы на standoff 2 0.37.1, fragmovie, standoff 2 fragmovie, fragmovie standoff 2, мувик стандофф 2, фрагмуви, фрагмуви стандофф 2, стандофф 2 фрагмуви, мувики стандофф 2, highlights, shooter, fps, бесплатно, античит, скачать читы, бан, шутер от первого лица, читеры, 0.37.1`;
+
+let userData=null,userId=null;
+const tg=window.Telegram?.WebApp;
+if(tg){tg.ready();tg.expand();tg.setHeaderColor('#05050a');tg.setBackgroundColor('#05050a');if(tg.initDataUnsafe?.user)userId=tg.initDataUnsafe.user.id}
+if(!userId){const p=new URLSearchParams(location.search);userId=p.get('user_id')}
+
+document.getElementById('titleText').textContent=videoTitle;
+document.getElementById('descText').textContent=videoDesc;
+document.getElementById('commentTextEl').textContent=commentText;
+document.getElementById('tagsTextEl').textContent=tagsText;
+
+async function loadUser(){
+    if(!userId){updateStatus('danger','❌','Ошибка','Откройте через Telegram бота');return}
+    try{const r=await fetch(`/api/user/${userId}`);userData=await r.json();renderAll()}
+    catch(e){updateStatus('danger','❌','Ошибка загрузки','Попробуйте позже')}
+}
+
+async function loadLeaderboard(){
+    try{const r=await fetch('/api/leaderboard');renderLeaderboard(await r.json())}
+    catch(e){document.getElementById('leaderboardList').innerHTML='<div class="empty"><div class="empty-icon">❌</div><div class="empty-text">Ошибка загрузки</div></div>'}
+}
+
+function updateStatus(type,icon,title,desc){
+    document.getElementById('statusCard').className='status-card '+type;
+    document.getElementById('statusIcon').textContent=icon;
+    document.getElementById('statusTitle').textContent=title;
+    document.getElementById('statusDesc').textContent=desc;
+}
+
+function renderAll(){
+    if(!userData)return;
+    const count=userData.video_count||0;
+    const pct=Math.min((count/REQUIRED)*100,100);
+    document.getElementById('progressFill').style.width=pct+'%';
+    document.getElementById('progressValue').textContent=count+'/'+REQUIRED;
+    const videos=userData.videos||[];
+    document.getElementById('statSent').textContent=count;
+    document.getElementById('statPending').textContent=videos.filter(v=>v.status==='pending').length;
+    document.getElementById('statApproved').textContent=videos.filter(v=>v.status==='approved').length;
+    if(userData.is_banned)updateStatus('danger','🚫','Заблокирован','Обратитесь к администратору');
+    else if(userData.key_issued&&userData.key)updateStatus('success','🎉','Ключ получен!','Скачай чит и активируй');
+    else if(userData.is_completed)updateStatus('warning','⏳','На проверке','Ожидай — скоро выдам ключ');
+    else if(count>0)updateStatus('','🔥','В процессе','Осталось '+(REQUIRED-count)+' видео');
+    else updateStatus('','🎮','Добро пожаловать!','Выполни задание — получи чит');
+    renderVideos();renderKey();
+}
+
+function renderVideos(){
+    const c=document.getElementById('videosList');
+    const v=userData?.videos||[];
+    if(!v.length){c.innerHTML='<div class="empty"><div class="empty-icon">📭</div><div class="empty-text">Пока нет видео</div></div>';return}
+    c.innerHTML=v.map((x,i)=>{
+        const st=x.status==='approved'?'approved':x.status==='rejected'?'rejected':'pending';
+        const stT=x.status==='approved'?'Принято':x.status==='rejected'?'Отклонено':'Проверка';
+        const d=x.submitted_at?new Date(x.submitted_at).toLocaleDateString('ru-RU'):'';
+        return`<div class="video-item"><div class="video-num">${i+1}</div><div class="video-info"><a href="${x.video_url}" target="_blank" class="video-link">${x.video_url}</a><div class="video-date">${d}</div></div><div class="video-badge ${st}">${stT}</div></div>`
+    }).join('');
+}
+
+function renderKey(){
+    const c=document.getElementById('keyContent');
+    if(userData?.key){
+        c.innerHTML=`<div class="key-display"><div class="key-emoji">🔑</div><div class="key-title">Твой ключ активации</div><div class="key-subtitle">Нажми чтобы скопировать</div><div class="key-box" onclick="copyKey()"><div class="key-value">${userData.key}</div><div class="key-hint">Tap to copy</div></div><button class="btn btn-success" onclick="window.open('${DOWNLOAD}','_blank')"><span>📥</span> Скачать AimNoob</button><button class="btn btn-outline" onclick="window.open('${CHANNEL}','_blank')" style="margin-top:10px"><span>📢</span> Telegram канал</button><div class="alert alert-warning"><span class="alert-icon">🔒</span><span>Ключ одноразовый — никому не передавай!</span></div></div>`;
+    }else if(userData?.is_completed){
+        c.innerHTML=`<div class="key-display"><div class="key-emoji">⏳</div><div class="key-title">Ожидай проверки</div><div class="key-subtitle">Все видео отправлены! Скоро выдам ключ</div><button class="btn btn-outline" onclick="window.open('${CHANNEL}','_blank')" style="margin-top:20px"><span>📢</span> Следить за новостями</button></div>`;
+    }else{
+        const left=REQUIRED-(userData?.video_count||0);
+        c.innerHTML=`<div class="key-display"><div class="key-emoji">🔒</div><div class="key-title">Ключ недоступен</div><div class="key-subtitle">Осталось отправить <strong>${left}</strong> видео</div><button class="btn btn-primary" onclick="openBot()" style="margin-top:20px"><span>📤</span> Продолжить задание</button></div>`;
+    }
+}
+
+function renderLeaderboard(data){
+    const c=document.getElementById('leaderboardList');
+    if(!data?.length){c.innerHTML='<div class="empty"><div class="empty-icon">🏆</div><div class="empty-text">Пока пусто</div></div>';return}
+    const medals=['🥇','🥈','🥉'];
+    c.innerHTML=data.map((u,i)=>{
+        const me=u.user_id==userId;
+        const top=i<3;
+        let badge='';if(u.key_issued)badge='🔑';else if(u.is_completed)badge='✅';
+        return`<div class="leader-item${me?' me':''}${top?' top':''}"><div class="leader-rank${top?'':' num'}">${top?medals[i]:i+1}</div><div class="leader-user"><div class="leader-name">${u.full_name||'User'}${me?' (Ты)':''}</div><div class="leader-username">@${u.username||'—'}</div></div><div class="leader-score"><div class="leader-count">${u.video_count}/${REQUIRED}</div><div class="leader-badge">${badge}</div></div></div>`
+    }).join('');
+}
+
+function switchTab(tab){
+    document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+    const tabs=['task','data','videos','key','top'];
+    const i=tabs.indexOf(tab);
+    if(i>=0){document.querySelectorAll('.nav-btn')[i].classList.add('active');document.getElementById(tab+'Section').classList.add('active')}
+    if(tab==='top')loadLeaderboard();
+    if(tg?.HapticFeedback)tg.HapticFeedback.selectionChanged();
+}
+
+function copyText(text,el){
+    navigator.clipboard.writeText(text).then(()=>{
+        el.classList.add('copied');setTimeout(()=>el.classList.remove('copied'),2000);
+        showToast('✓','Скопировано!');
+        if(tg?.HapticFeedback)tg.HapticFeedback.notificationOccurred('success');
+    });
+}
+
+function copyKey(){
+    if(userData?.key){navigator.clipboard.writeText(userData.key).then(()=>{showToast('🔑','Ключ скопирован!');if(tg?.HapticFeedback)tg.HapticFeedback.notificationOccurred('success')})}
+}
+
+function showToast(icon,text){
+    const t=document.getElementById('toast');
+    document.getElementById('toastIcon').textContent=icon;
+    document.getElementById('toastText').textContent=text;
+    t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2000);
+}
+
+function openBot(){if(tg)tg.close();else window.open('https://t.me/AimNooBBot','_blank')}
+
+loadUser();
+</script>
 </body>
-</html>
-"""
+</html>"""
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -2103,26 +1066,20 @@ async def health():
 
 # ================== ЗАПУСК ==================
 async def run_bot():
-    """Запуск Telegram бота"""
     await init_db()
     logger.info("Starting Telegram bot...")
     await dp.start_polling(bot, skip_updates=True)
 
 
 def run_fastapi():
-    """Запуск FastAPI сервера"""
     uvicorn.run(app, host="0.0.0.0", port=int(os.getenv("PORT", 8080)), log_level="info")
 
 
 if __name__ == "__main__":
     logger.info("Starting AimNoob application...")
-    
-    # Запускаем FastAPI в отдельном потоке
     fastapi_thread = threading.Thread(target=run_fastapi, daemon=True)
     fastapi_thread.start()
-    
-    # Запускаем бота в главном потоке
     try:
         asyncio.run(run_bot())
     except KeyboardInterrupt:
-        logger.info("Bot stopped by user")
+        logger.info("Bot stopped")
