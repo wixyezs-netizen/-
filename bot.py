@@ -27,6 +27,27 @@ DOMAIN = "AimMani.bothost.tech"
 CHANNEL_LINK = "https://t.me/AimNooBsoft"
 DOWNLOAD_LINK = "https://go.linkify.ru/2GPF"
 
+# ================== ДАННЫЕ ДЛЯ ВИДЕО ==================
+VIDEO_TITLE = "Чит для Standoff 2 0.37.1 | Скачать AimNoob 2025"
+VIDEO_DESCRIPTION = """Скачать чит для Standoff 2 0.37.1: https://t.me/AimNooBsoft
+
+🔥 Функции чита:
+• Аимбот с настройками
+• Wallhack (стены)
+• ESP игроков
+• No Recoil
+• Автоматическая стрельба
+• И многое другое!
+
+✅ Работает на всех версиях Android
+✅ Без вирусов и банов
+✅ Регулярные обновления
+
+Подпишись на канал: https://t.me/AimNooBsoft
+#standoff2 #чит #aimbot #wallhack #standoff2чит #aimnoob"""
+COMMENT_TEXT = "Скачать чит Standoff 2: https://t.me/AimNooBsoft"
+TAGS = "standoff2, чит standoff2, скачать чит standoff2, standoff2 aimbot, standoff2 wallhack, aimnoob, чит на андроид, standoff2 0.37.1, standoff2 читы, aimbot standoff2"
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -78,6 +99,48 @@ async def get_db():
     return await aiosqlite.connect(DB_PATH)
 
 
+async def init_db():
+    """Инициализация базы данных"""
+    async with aiosqlite.connect(DB_PATH) as db:
+        # Таблица пользователей
+        await db.execute("""
+            CREATE TABLE IF NOT EXISTS users (
+                user_id INTEGER PRIMARY KEY,
+                full_name TEXT,
+                username TEXT,
+                video_count INTEGER DEFAULT 0,
+                is_completed INTEGER DEFAULT 0,
+                key_issued INTEGER DEFAULT 0,
+                is_banned INTEGER DEFAULT 0,
+                registered_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
+        
+        # Таблица видео
+        await db.execute("""
+            CREATE TABLE IF NOT EXISTS videos (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id INTEGER,
+                video_url TEXT,
+                status TEXT DEFAULT 'pending',
+                submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                FOREIGN KEY (user_id) REFERENCES users(user_id)
+            )
+        """)
+        
+        # Таблица выданных ключей
+        await db.execute("""
+            CREATE TABLE IF NOT EXISTS issued_keys (
+                user_id INTEGER PRIMARY KEY,
+                key_value TEXT,
+                issued_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                FOREIGN KEY (user_id) REFERENCES users(user_id)
+            )
+        """)
+        
+        await db.commit()
+
+
 async def get_user_data(user_id: int) -> dict:
     async with aiosqlite.connect(DB_PATH) as db:
         db.row_factory = aiosqlite.Row
@@ -95,6 +158,8 @@ async def get_user_data(user_id: int) -> dict:
                     "key_issued": 0,
                     "is_banned": 0,
                     "registered_at": None,
+                    "full_name": None,
+                    "username": None,
                 }
 
         # Получаем ключ
@@ -1999,6 +2064,13 @@ MINI_APP_HTML = """
 </body>
 </html>
 """
+
+
+@app.on_event("startup")
+async def startup_event():
+    """Инициализация при запуске"""
+    await init_db()
+    logger.info("Database initialized")
 
 
 @app.get("/", response_class=HTMLResponse)
