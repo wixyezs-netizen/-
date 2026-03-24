@@ -37,8 +37,8 @@ DOWNLOAD_LINK = "https://t.me/AimNooBsoft"
 WEBAPP_URL = f"https://{DOMAIN}"
 
 # АДМИН НАСТРОЙКИ
-ADMIN_IDS = [123456789]  # Замени на свой Telegram ID
-ADMIN_PASSWORD = "aimnoob2025"  # Пароль для входа в админку
+ADMIN_IDS = [8346538289]  # Замени на свой Telegram ID
+ADMIN_PASSWORD = "Lop123lop"  # Пароль для входа в админку
 
 # Данные для видео
 VIDEO_TITLE = "⚡️КАК СКАЧАТЬ ЧИТ 0.37.1 STANDOFF 2 БЕЗ РУТ И БАНА ПОЛНАЯ УСТАНОВКА"
