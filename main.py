@@ -589,533 +589,1496 @@ async def api_validate(request: Request):
 
 
 # ================== HTML FRONTEND ==================
-HTML_TEMPLATE = f"""
+HTML_TEMPLATE = """
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
-    <title>AimNoob | Mini App</title>
+    <title>AimNoob | Premium Cheat</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        * {{
+        :root {
+            --primary: #8b5cf6;
+            --primary-dark: #7c3aed;
+            --primary-light: #a78bfa;
+            --secondary: #06b6d4;
+            --accent: #f59e0b;
+            --success: #10b981;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --dark: #0f0f1a;
+            --darker: #080810;
+            --card: rgba(15, 15, 26, 0.8);
+            --card-border: rgba(139, 92, 246, 0.2);
+            --text: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.6);
+            --glow: 0 0 40px rgba(139, 92, 246, 0.3);
+        }
+
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }}
-        
-        body {{
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
-            color: #fff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--darker);
+            color: var(--text);
             min-height: 100vh;
-            padding: 20px;
-        }}
-        
-        .container {{
-            max-width: 600px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Animated Background */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .bg-animation::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(245, 158, 11, 0.08) 0%, transparent 40%);
+            animation: bgRotate 30s linear infinite;
+        }
+
+        @keyframes bgRotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .floating-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.5;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .orb-1 {
+            width: 300px;
+            height: 300px;
+            background: var(--primary);
+            top: 10%;
+            left: -10%;
+            animation-delay: 0s;
+        }
+
+        .orb-2 {
+            width: 200px;
+            height: 200px;
+            background: var(--secondary);
+            bottom: 20%;
+            right: -5%;
+            animation-delay: -7s;
+        }
+
+        .orb-3 {
+            width: 150px;
+            height: 150px;
+            background: var(--accent);
+            top: 50%;
+            left: 50%;
+            animation-delay: -14s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) translateX(0); }
+            25% { transform: translateY(-30px) translateX(20px); }
+            50% { transform: translateY(20px) translateX(-20px); }
+            75% { transform: translateY(-10px) translateX(30px); }
+        }
+
+        /* Grid Pattern */
+        .grid-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(139, 92, 246, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(139, 92, 246, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+        }
+
+        /* Container */
+        .container {
+            max-width: 480px;
             margin: 0 auto;
-        }}
-        
-        .card {{
-            background: rgba(26, 26, 46, 0.9);
-            backdrop-filter: blur(10px);
+            padding: 16px;
+            padding-bottom: 100px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 24px 0;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .logo-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: var(--glow);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); box-shadow: var(--glow); }
+            50% { transform: scale(1.05); box-shadow: 0 0 60px rgba(139, 92, 246, 0.5); }
+        }
+
+        .logo-text {
+            font-size: 32px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff, var(--primary-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+
+        .header-subtitle {
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Status Card */
+        .status-card {
+            background: var(--card);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 24px;
+            margin-bottom: 16px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .status-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+        }
+
+        .status-card.success::before {
+            background: linear-gradient(90deg, var(--success), #34d399);
+        }
+
+        .status-card.warning::before {
+            background: linear-gradient(90deg, var(--warning), #fbbf24);
+        }
+
+        .status-card.danger::before {
+            background: linear-gradient(90deg, var(--danger), #f87171);
+        }
+
+        .status-content {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .status-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(6, 182, 212, 0.1));
+            flex-shrink: 0;
+        }
+
+        .status-info {
+            flex: 1;
+        }
+
+        .status-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .status-text {
+            color: var(--text-secondary);
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        /* Progress Section */
+        .progress-card {
+            background: var(--card);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .progress-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .progress-value {
+            font-size: 24px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .progress-bar-container {
+            position: relative;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 6px;
+            transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.3),
+                transparent
+            );
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .progress-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 12px 8px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+        }
+
+        .stat-value {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary-light);
+        }
+
+        .stat-label {
+            font-size: 11px;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+
+        /* Navigation */
+        .nav-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(15, 15, 26, 0.95);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid var(--card-border);
+            padding: 12px 16px;
+            padding-bottom: max(12px, env(safe-area-inset-bottom));
+            z-index: 100;
+        }
+
+        .nav-tabs {
+            display: flex;
+            justify-content: space-around;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        .nav-tab {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            padding: 8px 16px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--text-secondary);
+            background: transparent;
+            border: none;
+            font-family: inherit;
+        }
+
+        .nav-tab:active {
+            transform: scale(0.95);
+        }
+
+        .nav-tab.active {
+            color: var(--primary);
+            background: rgba(139, 92, 246, 0.15);
+        }
+
+        .nav-tab-icon {
+            font-size: 22px;
+            line-height: 1;
+        }
+
+        .nav-tab-label {
+            font-size: 10px;
+            font-weight: 600;
+        }
+
+        /* Sections */
+        .section {
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Cards */
+        .card {
+            background: var(--card);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
             border-radius: 20px;
             padding: 20px;
             margin-bottom: 16px;
-            border: 1px solid rgba(108, 92, 231, 0.3);
-        }}
-        
-        .progress-bar {{
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: rgba(139, 92, 246, 0.4);
+        }
+
+        .card-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .card-title-icon {
+            font-size: 20px;
+        }
+
+        /* Steps */
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .step {
+            display: flex;
+            gap: 14px;
+            padding: 16px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .step:hover {
+            background: rgba(139, 92, 246, 0.05);
+            border-color: rgba(139, 92, 246, 0.2);
+        }
+
+        .step-number {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .step-content p {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        /* Buttons */
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
             width: 100%;
-            height: 30px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 15px;
+            padding: 16px 24px;
+            border: none;
+            border-radius: 14px;
+            font-family: inherit;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
             overflow: hidden;
-            margin: 15px 0;
-        }}
-        
-        .progress-fill {{
-            height: 100%;
-            background: linear-gradient(90deg, #6c5ce7, #a29bfe);
-            transition: width 0.5s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(139, 92, 246, 0.5);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, var(--success), #059669);
+            color: white;
+            box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);
+        }
+
+        .btn-success:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(16, 185, 129, 0.5);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--card-border);
+            color: var(--text);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+            background: rgba(139, 92, 246, 0.1);
+        }
+
+        .btn-icon {
+            font-size: 18px;
+        }
+
+        /* Copy Blocks */
+        .copy-section {
+            margin-bottom: 20px;
+        }
+
+        .copy-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .copy-block {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .copy-block:hover {
+            background: rgba(139, 92, 246, 0.1);
+            border-color: var(--primary);
+        }
+
+        .copy-block:active {
+            transform: scale(0.98);
+        }
+
+        .copy-block-text {
+            font-size: 13px;
+            line-height: 1.6;
+            color: var(--text);
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+
+        .copy-hint {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            font-size: 10px;
+            color: var(--text-secondary);
+            background: rgba(0, 0, 0, 0.3);
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+
+        /* Video List */
+        .video-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .video-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .video-item:hover {
+            background: rgba(139, 92, 246, 0.05);
+        }
+
+        .video-number {
+            width: 28px;
+            height: 28px;
+            background: rgba(139, 92, 246, 0.2);
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 12px;
-            font-weight: bold;
-        }}
-        
-        .nav-tabs {{
-            display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            overflow-x: auto;
-        }}
-        
-        .tab {{
-            padding: 10px 20px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 10px;
-            cursor: pointer;
-            white-space: nowrap;
-        }}
-        
-        .tab.active {{
-            background: #6c5ce7;
-        }}
-        
-        .section {{
-            display: none;
-        }}
-        
-        .section.active {{
+            font-weight: 700;
+            color: var(--primary-light);
+            flex-shrink: 0;
+        }
+
+        .video-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .video-link {
+            color: var(--primary-light);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
             display: block;
-        }}
-        
-        .video-item {{
-            background: rgba(255,255,255,0.05);
-            border-radius: 10px;
-            padding: 12px;
-            margin-bottom: 8px;
-        }}
-        
-        .copy-block {{
-            background: rgba(255,255,255,0.05);
-            border-radius: 10px;
-            padding: 12px;
-            margin: 10px 0;
-            cursor: pointer;
-        }}
-        
-        .key-value {{
-            background: rgba(0,0,0,0.5);
-            padding: 15px;
-            border-radius: 10px;
-            font-family: monospace;
-            font-size: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .video-date {
+            font-size: 11px;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+
+        .video-status {
+            padding: 6px 10px;
+            border-radius: 8px;
+            font-size: 11px;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .video-status.pending {
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--warning);
+        }
+
+        .video-status.approved {
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--success);
+        }
+
+        .video-status.rejected {
+            background: rgba(239, 68, 68, 0.15);
+            color: var(--danger);
+        }
+
+        /* Key Display */
+        .key-container {
             text-align: center;
+            padding: 20px 0;
+        }
+
+        .key-icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .key-box {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(6, 182, 212, 0.1));
+            border: 2px solid var(--primary);
+            border-radius: 16px;
+            padding: 20px;
+            margin: 20px 0;
             cursor: pointer;
-            margin: 15px 0;
-        }}
-        
-        .btn {{
-            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
-            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .key-box:hover {
+            transform: scale(1.02);
+            box-shadow: var(--glow);
+        }
+
+        .key-box:active {
+            transform: scale(0.98);
+        }
+
+        .key-value {
+            font-family: 'Courier New', monospace;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--primary-light);
+        }
+
+        .key-hint {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 8px;
+        }
+
+        /* Leaderboard */
+        .leaderboard-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .leaderboard-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .leaderboard-item.is-me {
+            background: rgba(139, 92, 246, 0.1);
+            border-color: var(--primary);
+        }
+
+        .leaderboard-item.top-3 {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.05));
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+
+        .leaderboard-rank {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .leaderboard-rank.number {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text-secondary);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+
+        .leaderboard-user {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .leaderboard-name {
+            font-size: 14px;
+            font-weight: 600;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .leaderboard-username {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .leaderboard-score {
+            text-align: right;
+            flex-shrink: 0;
+        }
+
+        .leaderboard-videos {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary-light);
+        }
+
+        .leaderboard-badge {
+            font-size: 16px;
+            margin-top: 2px;
+        }
+
+        /* Alert Box */
+        .alert {
+            padding: 14px 16px;
+            border-radius: 12px;
+            font-size: 13px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        .alert-warning {
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            color: #fcd34d;
+        }
+
+        .alert-icon {
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .empty-icon {
+            font-size: 48px;
+            margin-bottom: 12px;
+            opacity: 0.5;
+        }
+
+        .empty-text {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        /* Toast */
+        .toast {
+            position: fixed;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: var(--primary);
             color: white;
             padding: 12px 24px;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            width: 100%;
-            margin-top: 10px;
-        }}
-        
-        .btn-success {{
-            background: linear-gradient(135deg, #00e676, #00c853);
-        }}
-        
-        .toast {{
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #6c5ce7;
-            padding: 10px 20px;
-            border-radius: 10px;
-            display: none;
-            z-index: 1000;
-        }}
-        
-        h3 {{
-            margin-bottom: 10px;
-            font-size: 18px;
-        }}
-        
-        a {{
-            color: #6c5ce7;
-            text-decoration: none;
-        }}
-        
-        .status-emoji {{
-            font-size: 48px;
-            text-align: center;
-            margin-bottom: 10px;
-        }}
-        
-        .status-title {{
-            text-align: center;
-            font-size: 20px;
-            margin-bottom: 5px;
-        }}
-        
-        .status-text {{
-            text-align: center;
-            opacity: 0.8;
+            border-radius: 12px;
             font-size: 14px;
-        }}
-        
-        .warning {{
-            background: rgba(255, 107, 107, 0.2);
-            border: 1px solid rgba(255, 107, 107, 0.3);
-            padding: 10px;
-            border-radius: 10px;
-            margin-top: 10px;
-            font-size: 12px;
-        }}
-        
-        .step {{
-            margin-bottom: 15px;
-        }}
-        
-        .step-number {{
-            display: inline-block;
-            width: 24px;
-            height: 24px;
-            background: #6c5ce7;
+            font-weight: 600;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            opacity: 0;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        /* Loading */
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(139, 92, 246, 0.2);
+            border-top-color: var(--primary);
             border-radius: 50%;
-            text-align: center;
-            line-height: 24px;
-            font-size: 12px;
-            margin-right: 10px;
-        }}
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        /* Responsive */
+        @media (max-width: 380px) {
+            .container {
+                padding: 12px;
+            }
+            
+            .logo-text {
+                font-size: 26px;
+            }
+            
+            .progress-value {
+                font-size: 20px;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+    </div>
+    <div class="grid-pattern"></div>
+
     <div class="container">
-        <div class="card" id="statusCard">
-            <div class="status-emoji" id="statusEmoji">🎮</div>
-            <div class="status-title" id="statusTitle">Добро пожаловать!</div>
-            <div class="status-text" id="statusText">Выполни задание и получи ключ</div>
-        </div>
-        
-        <div class="card">
-            <h3>📊 Прогресс задания</h3>
-            <div class="progress-bar">
-                <div class="progress-fill" id="progressFill">0/{REQUIRED_VIDEOS}</div>
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">🎯</div>
+                <span class="logo-text">AimNoob</span>
             </div>
-            <div id="progressText" style="text-align: center; margin-top: 10px;">0 из {REQUIRED_VIDEOS} видео</div>
+            <div class="header-subtitle">Premium Cheat for Standoff 2</div>
+        </header>
+
+        <!-- Status Card -->
+        <div class="status-card" id="statusCard">
+            <div class="status-content">
+                <div class="status-icon" id="statusIcon">🎮</div>
+                <div class="status-info">
+                    <div class="status-title" id="statusTitle">Загрузка...</div>
+                    <div class="status-text" id="statusText">Получение данных</div>
+                </div>
+            </div>
         </div>
-        
-        <div class="nav-tabs">
-            <div class="tab active" onclick="switchTab('task')">📋 Задание</div>
-            <div class="tab" onclick="switchTab('data')">📝 Данные</div>
-            <div class="tab" onclick="switchTab('videos')">📹 Мои видео</div>
-            <div class="tab" onclick="switchTab('key')">🔑 Ключ</div>
-            <div class="tab" onclick="switchTab('top')">🏆 Топ</div>
+
+        <!-- Progress Card -->
+        <div class="progress-card">
+            <div class="progress-header">
+                <span class="progress-title">ПРОГРЕСС ЗАДАНИЯ</span>
+                <span class="progress-value" id="progressValue">0/""" + str(REQUIRED_VIDEOS) + """</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill" id="progressFill" style="width: 0%"></div>
+            </div>
+            <div class="progress-stats">
+                <div class="stat-item">
+                    <div class="stat-value" id="statSent">0</div>
+                    <div class="stat-label">Отправлено</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="statPending">0</div>
+                    <div class="stat-label">На проверке</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="statApproved">0</div>
+                    <div class="stat-label">Принято</div>
+                </div>
+            </div>
         </div>
-        
+
+        <!-- Sections -->
         <div id="taskSection" class="section active">
             <div class="card">
-                <h3>📋 Инструкция</h3>
-                
-                <div class="step">
-                    <span class="step-number">1</span>
-                    <strong>Найди видео</strong><br>
-                    Берёшь видео с TikTok из Telegram-каналов. Тематика: чит Standoff 2 0.37.1. Видео должны быть <b>БЕЗ</b> водяных знаков.
+                <div class="card-title">
+                    <span class="card-title-icon">📋</span>
+                    Как получить ключ
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Найди видео</h4>
+                            <p>Скачай видео из TikTok или Telegram каналов на тему чита Standoff 2. Видео должны быть БЕЗ водяных знаков.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Загрузи на YouTube</h4>
+                            <p>Выложи как обычное видео (НЕ Shorts). Используй название и описание из раздела «Данные».</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Отправь ссылку</h4>
+                            <p>Скопируй ссылку на видео и отправь боту. Повтори """ + str(REQUIRED_VIDEOS) + """ раз и получи ключ!</p>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="step">
-                    <span class="step-number">2</span>
-                    <strong>Выложи на YouTube</strong><br>
-                    Загружаешь как <b>обычный</b> ролик (НЕ Shorts). Вставляешь название и описание из раздела «Данные». В комментариях — ссылку на ТГ-канал.
+                <div class="alert alert-warning">
+                    <span class="alert-icon">⚠️</span>
+                    <span>В комментариях к видео обязательно оставь ссылку на наш Telegram канал!</span>
                 </div>
                 
-                <div class="step">
-                    <span class="step-number">3</span>
-                    <strong>Отправь ссылку</strong><br>
-                    Отправь ссылку на загруженное видео боту. Повтори {REQUIRED_VIDEOS} раз. После проверки — получишь ключ!
-                </div>
-                
-                <div class="warning">
-                    ⚠️ Без ссылки в комментариях на ТГ-канал выдачи не будет! Это обязательное условие.
-                </div>
-                
-                <button class="btn" onclick="openBot()">📤 Отправить ссылку боту</button>
+                <button class="btn btn-primary" onclick="openBot()" style="margin-top: 20px;">
+                    <span class="btn-icon">📤</span>
+                    Отправить видео боту
+                </button>
             </div>
         </div>
-        
+
         <div id="dataSection" class="section">
             <div class="card">
-                <h3>📝 Название видео</h3>
-                <div class="copy-block" onclick="copyText('{VIDEO_TITLE}')">
-                    {VIDEO_TITLE}
+                <div class="card-title">
+                    <span class="card-title-icon">📝</span>
+                    Данные для видео
                 </div>
                 
-                <h3>📄 Описание</h3>
-                <div class="copy-block" onclick="copyText(`{VIDEO_DESCRIPTION}`)">
-                    {VIDEO_DESCRIPTION[:150]}...
+                <div class="copy-section">
+                    <div class="copy-label">
+                        <span>🎬</span> Название видео
+                    </div>
+                    <div class="copy-block" onclick="copyText(videoTitle, this)">
+                        <div class="copy-block-text" id="videoTitleText"></div>
+                        <span class="copy-hint">Нажми чтобы скопировать</span>
+                    </div>
                 </div>
                 
-                <h3>💬 Комментарий</h3>
-                <div class="copy-block" onclick="copyText('{COMMENT_TEXT}')">
-                    {COMMENT_TEXT}
+                <div class="copy-section">
+                    <div class="copy-label">
+                        <span>📄</span> Описание
+                    </div>
+                    <div class="copy-block" onclick="copyText(videoDescription, this)">
+                        <div class="copy-block-text" id="videoDescText"></div>
+                        <span class="copy-hint">Нажми чтобы скопировать</span>
+                    </div>
                 </div>
                 
-                <div class="warning">
-                    💡 Нажми на блок чтобы скопировать текст
+                <div class="copy-section">
+                    <div class="copy-label">
+                        <span>💬</span> Комментарий
+                    </div>
+                    <div class="copy-block" onclick="copyText(commentText, this)">
+                        <div class="copy-block-text" id="commentTextEl"></div>
+                        <span class="copy-hint">Нажми чтобы скопировать</span>
+                    </div>
+                </div>
+                
+                <div class="copy-section">
+                    <div class="copy-label">
+                        <span>🏷️</span> Теги
+                    </div>
+                    <div class="copy-block" onclick="copyText(tagsText, this)">
+                        <div class="copy-block-text" id="tagsTextEl"></div>
+                        <span class="copy-hint">Нажми чтобы скопировать</span>
+                    </div>
                 </div>
             </div>
         </div>
-        
+
         <div id="videosSection" class="section">
             <div class="card">
-                <h3>📹 Мои видео</h3>
-                <div id="videosList">
-                    <div style="text-align: center;">Загрузка...</div>
+                <div class="card-title">
+                    <span class="card-title-icon">📹</span>
+                    Мои видео
+                </div>
+                <div id="videosList" class="video-list">
+                    <div class="loading"><div class="spinner"></div></div>
                 </div>
             </div>
         </div>
-        
+
         <div id="keySection" class="section">
             <div class="card" id="keyContent">
-                <div style="text-align: center;">Загрузка...</div>
+                <div class="loading"><div class="spinner"></div></div>
             </div>
         </div>
-        
+
         <div id="topSection" class="section">
             <div class="card">
-                <h3>🏆 Таблица лидеров</h3>
-                <div id="leaderboardList">
-                    <div style="text-align: center;">Загрузка...</div>
+                <div class="card-title">
+                    <span class="card-title-icon">🏆</span>
+                    Таблица лидеров
+                </div>
+                <div id="leaderboardList" class="leaderboard-list">
+                    <div class="loading"><div class="spinner"></div></div>
                 </div>
             </div>
         </div>
     </div>
-    
-    <div class="toast" id="toast">✅ Скопировано!</div>
-    
+
+    <!-- Bottom Navigation -->
+    <nav class="nav-container">
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="switchTab('task')">
+                <span class="nav-tab-icon">📋</span>
+                <span class="nav-tab-label">Задание</span>
+            </button>
+            <button class="nav-tab" onclick="switchTab('data')">
+                <span class="nav-tab-icon">📝</span>
+                <span class="nav-tab-label">Данные</span>
+            </button>
+            <button class="nav-tab" onclick="switchTab('videos')">
+                <span class="nav-tab-icon">📹</span>
+                <span class="nav-tab-label">Видео</span>
+            </button>
+            <button class="nav-tab" onclick="switchTab('key')">
+                <span class="nav-tab-icon">🔑</span>
+                <span class="nav-tab-label">Ключ</span>
+            </button>
+            <button class="nav-tab" onclick="switchTab('top')">
+                <span class="nav-tab-icon">🏆</span>
+                <span class="nav-tab-label">Топ</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <span id="toastIcon">✅</span>
+        <span id="toastText">Скопировано!</span>
+    </div>
+
     <script>
-        const REQUIRED = {REQUIRED_VIDEOS};
+        // Constants
+        const REQUIRED = """ + str(REQUIRED_VIDEOS) + """;
+        const CHANNEL_LINK = '""" + CHANNEL_LINK + """';
+        const DOWNLOAD_LINK = '""" + DOWNLOAD_LINK + """';
+        
+        // Video data
+        const videoTitle = `""" + VIDEO_TITLE + """`;
+        const videoDescription = `""" + VIDEO_DESCRIPTION + """`;
+        const commentText = `""" + COMMENT_TEXT + """`;
+        const tagsText = `""" + TAGS + """`;
+        
+        // State
         let userData = null;
         let userId = null;
         
+        // Telegram WebApp
         const tg = window.Telegram?.WebApp;
-        if (tg) {{
+        if (tg) {
             tg.ready();
             tg.expand();
-            if (tg.initDataUnsafe?.user) {{
+            tg.setHeaderColor('#080810');
+            tg.setBackgroundColor('#080810');
+            
+            if (tg.initDataUnsafe?.user) {
                 userId = tg.initDataUnsafe.user.id;
-                const name = tg.initDataUnsafe.user.first_name || 'User';
-                document.title = `AimNoob | ${{name}}`;
-            }}
-        }}
+            }
+        }
         
-        if (!userId) {{
+        // Fallback for testing
+        if (!userId) {
             const params = new URLSearchParams(window.location.search);
             userId = params.get('user_id');
-        }}
+        }
         
-        async function loadUserData() {{
-            if (!userId) return;
-            try {{
-                const res = await fetch(`/api/user/${{userId}}`);
+        // Initialize text content
+        document.getElementById('videoTitleText').textContent = videoTitle;
+        document.getElementById('videoDescText').textContent = videoDescription.substring(0, 200) + '...';
+        document.getElementById('commentTextEl').textContent = commentText;
+        document.getElementById('tagsTextEl').textContent = tagsText.substring(0, 100) + '...';
+        
+        // Load user data
+        async function loadUserData() {
+            if (!userId) {
+                updateStatus('error', '❌', 'Ошибка авторизации', 'Откройте приложение через Telegram бота');
+                return;
+            }
+            
+            try {
+                const res = await fetch(`/api/user/${userId}`);
                 userData = await res.json();
                 renderAll();
-            }} catch(e) {{
+            } catch (e) {
                 console.error(e);
-            }}
-        }}
+                updateStatus('error', '❌', 'Ошибка загрузки', 'Не удалось получить данные');
+            }
+        }
         
-        async function loadLeaderboard() {{
-            try {{
+        // Load leaderboard
+        async function loadLeaderboard() {
+            try {
                 const res = await fetch('/api/leaderboard');
                 const data = await res.json();
                 renderLeaderboard(data);
-            }} catch(e) {{
+            } catch (e) {
                 console.error(e);
-            }}
-        }}
+                document.getElementById('leaderboardList').innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-icon">❌</div>
+                        <div class="empty-text">Не удалось загрузить данные</div>
+                    </div>
+                `;
+            }
+        }
         
-        function renderAll() {{
+        // Update status card
+        function updateStatus(type, icon, title, text) {
+            const card = document.getElementById('statusCard');
+            const iconEl = document.getElementById('statusIcon');
+            const titleEl = document.getElementById('statusTitle');
+            const textEl = document.getElementById('statusText');
+            
+            card.className = 'status-card ' + type;
+            iconEl.textContent = icon;
+            titleEl.textContent = title;
+            textEl.textContent = text;
+        }
+        
+        // Render all
+        function renderAll() {
             if (!userData) return;
             
             const count = userData.video_count || 0;
-            const percent = (count / REQUIRED) * 100;
-            document.getElementById('progressFill').style.width = `${{percent}}%`;
-            document.getElementById('progressFill').textContent = `${{count}}/${{REQUIRED}}`;
-            document.getElementById('progressText').textContent = `${{count}} из ${{REQUIRED}} видео`;
+            const percent = Math.min((count / REQUIRED) * 100, 100);
             
-            if (userData.is_banned) {{
-                document.getElementById('statusEmoji').textContent = '🚫';
-                document.getElementById('statusTitle').textContent = 'Аккаунт заблокирован';
-                document.getElementById('statusText').textContent = 'Обратитесь к администратору';
-            }} else if (userData.key_issued && userData.key) {{
-                document.getElementById('statusEmoji').textContent = '🎉';
-                document.getElementById('statusTitle').textContent = 'Ключ получен!';
-                document.getElementById('statusText').textContent = 'Скачай чит и активируй';
-            }} else if (userData.is_completed) {{
-                document.getElementById('statusEmoji').textContent = '✅';
-                document.getElementById('statusTitle').textContent = 'Задание выполнено!';
-                document.getElementById('statusText').textContent = 'Ожидай проверки администратором';
-            }} else if (count > 0) {{
-                document.getElementById('statusEmoji').textContent = '⏳';
-                document.getElementById('statusTitle').textContent = 'В процессе';
-                document.getElementById('statusText').textContent = `Осталось ${{REQUIRED - count}} видео`;
-            }} else {{
-                document.getElementById('statusEmoji').textContent = '🎮';
-                document.getElementById('statusTitle').textContent = 'Добро пожаловать!';
-                document.getElementById('statusText').textContent = 'Выполни задание и получи чит';
-            }}
+            // Progress
+            document.getElementById('progressFill').style.width = `${percent}%`;
+            document.getElementById('progressValue').textContent = `${count}/${REQUIRED}`;
+            
+            // Stats
+            const videos = userData.videos || [];
+            const pending = videos.filter(v => v.status === 'pending').length;
+            const approved = videos.filter(v => v.status === 'approved').length;
+            
+            document.getElementById('statSent').textContent = count;
+            document.getElementById('statPending').textContent = pending;
+            document.getElementById('statApproved').textContent = approved;
+            
+            // Status
+            if (userData.is_banned) {
+                updateStatus('danger', '🚫', 'Аккаунт заблокирован', 'Обратитесь к администратору для разблокировки');
+            } else if (userData.key_issued && userData.key) {
+                updateStatus('success', '🎉', 'Ключ получен!', 'Скачай чит и активируй его с помощью ключа');
+            } else if (userData.is_completed) {
+                updateStatus('warning', '⏳', 'Ожидание проверки', 'Все видео отправлены. Администратор скоро проверит');
+            } else if (count > 0) {
+                updateStatus('', '🔥', 'Продолжай работать!', `Осталось отправить ${REQUIRED - count} видео`);
+            } else {
+                updateStatus('', '🎮', 'Добро пожаловать!', 'Выполни задание и получи доступ к читу');
+            }
             
             renderVideos();
             renderKey();
-        }}
+        }
         
-        function renderVideos() {{
+        // Render videos
+        function renderVideos() {
             const container = document.getElementById('videosList');
             const videos = userData?.videos || [];
             
-            if (videos.length === 0) {{
-                container.innerHTML = '<div style="text-align: center;">📭 Видео пока нет</div>';
+            if (videos.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-icon">📭</div>
+                        <div class="empty-text">Вы еще не отправили ни одного видео</div>
+                    </div>
+                `;
                 return;
-            }}
+            }
             
             let html = '';
-            videos.forEach((v, i) => {{
-                const statusColor = v.status === 'approved' ? '#00e676' : v.status === 'rejected' ? '#ff5252' : '#ffab40';
-                const statusText = v.status === 'approved' ? '✅ Принято' : v.status === 'rejected' ? '❌ Отклонено' : '⏳ На проверке';
+            videos.forEach((v, i) => {
+                const statusClass = v.status === 'approved' ? 'approved' : v.status === 'rejected' ? 'rejected' : 'pending';
+                const statusText = v.status === 'approved' ? '✓ Принято' : v.status === 'rejected' ? '✗ Отклонено' : '⏳ Проверка';
                 const date = v.submitted_at ? new Date(v.submitted_at).toLocaleDateString('ru-RU') : '';
+                
                 html += `
                     <div class="video-item">
-                        <div><b>#${{i+1}}</b></div>
-                        <div style="flex:1; margin: 0 10px;">
-                            <a href="${{v.video_url}}" target="_blank" style="color: #6c5ce7;">Ссылка</a>
-                            <div style="font-size: 11px; color: #888;">${{date}}</div>
+                        <div class="video-number">${i + 1}</div>
+                        <div class="video-info">
+                            <a href="${v.video_url}" target="_blank" class="video-link">${v.video_url}</a>
+                            <div class="video-date">${date}</div>
                         </div>
-                        <div style="color: ${{statusColor}};">${{statusText}}</div>
+                        <div class="video-status ${statusClass}">${statusText}</div>
                     </div>
                 `;
-            }});
+            });
+            
             container.innerHTML = html;
-        }}
+        }
         
-        function renderKey() {{
+        // Render key
+        function renderKey() {
             const container = document.getElementById('keyContent');
             
-            if (userData?.key) {{
+            if (userData?.key) {
                 container.innerHTML = `
-                    <div style="text-align: center;">
-                        <div style="font-size: 48px;">🔑</div>
-                        <h3>Ваш ключ активации</h3>
-                        <div class="key-value" onclick="copyKey()">${{userData.key}}</div>
-                        <button class="btn btn-success" onclick="window.open('{DOWNLOAD_LINK}', '_blank')">📥 Скачать чит</button>
-                        <button class="btn" onclick="window.open('{CHANNEL_LINK}', '_blank')">📌 Наш канал</button>
-                        <div class="warning" style="margin-top: 15px;">
-                            ⚠️ Ключ одноразовый — никому не передавай!
+                    <div class="key-container">
+                        <div class="key-icon">🔑</div>
+                        <h3 style="font-size: 20px; margin-bottom: 8px;">Ваш ключ активации</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px;">Нажмите чтобы скопировать</p>
+                        <div class="key-box" onclick="copyKey()">
+                            <div class="key-value">${userData.key}</div>
+                            <div class="key-hint">Tap to copy</div>
+                        </div>
+                        <button class="btn btn-success" onclick="window.open('${DOWNLOAD_LINK}', '_blank')">
+                            <span class="btn-icon">📥</span>
+                            Скачать AimNoob
+                        </button>
+                        <button class="btn btn-outline" onclick="window.open('${CHANNEL_LINK}', '_blank')" style="margin-top: 10px;">
+                            <span class="btn-icon">📢</span>
+                            Наш Telegram канал
+                        </button>
+                        <div class="alert alert-warning" style="margin-top: 16px;">
+                            <span class="alert-icon">🔒</span>
+                            <span>Ключ одноразовый — никому не передавай!</span>
                         </div>
                     </div>
                 `;
-            }} else if (userData?.is_completed) {{
+            } else if (userData?.is_completed) {
                 container.innerHTML = `
-                    <div style="text-align: center;">
-                        <div style="font-size: 48px;">⏳</div>
-                        <h3>Ожидание проверки</h3>
-                        <p>Все видео отправлены! Администратор проверит и выдаст ключ. Обычно это занимает до 24 часов.</p>
+                    <div class="key-container">
+                        <div class="key-icon">⏳</div>
+                        <h3 style="font-size: 20px; margin-bottom: 8px;">Ожидание проверки</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                            Все видео успешно отправлены!<br>
+                            Администратор проверит их и выдаст ключ.<br>
+                            Обычно это занимает до 24 часов.
+                        </p>
+                        <button class="btn btn-outline" onclick="window.open('${CHANNEL_LINK}', '_blank')" style="margin-top: 20px;">
+                            <span class="btn-icon">📢</span>
+                            Следить за новостями
+                        </button>
                     </div>
                 `;
-            }} else {{
-                const left = REQUIRED - (userData?.video_count || 0);
+            } else {
+                const remaining = REQUIRED - (userData?.video_count || 0);
                 container.innerHTML = `
-                    <div style="text-align: center;">
-                        <div style="font-size: 48px;">🔒</div>
-                        <h3>Ключ пока недоступен</h3>
-                        <p>Осталось отправить <b>${{left}}</b> видео. Выполни задание полностью!</p>
-                        <button class="btn" onclick="openBot()">📤 Продолжить задание</button>
+                    <div class="key-container">
+                        <div class="key-icon">🔒</div>
+                        <h3 style="font-size: 20px; margin-bottom: 8px;">Ключ пока недоступен</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                            Для получения ключа нужно отправить<br>
+                            ещё <strong style="color: var(--primary-light);">${remaining}</strong> видео
+                        </p>
+                        <button class="btn btn-primary" onclick="openBot()" style="margin-top: 20px;">
+                            <span class="btn-icon">📤</span>
+                            Продолжить задание
+                        </button>
                     </div>
                 `;
-            }}
-        }}
+            }
+        }
         
-        function renderLeaderboard(data) {{
+        // Render leaderboard
+        function renderLeaderboard(data) {
             const container = document.getElementById('leaderboardList');
             
-            if (!data || data.length === 0) {{
-                container.innerHTML = '<div style="text-align: center;">🏆 Пока никто не отправлял видео</div>';
+            if (!data || data.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-icon">🏆</div>
+                        <div class="empty-text">Пока никто не отправлял видео</div>
+                    </div>
+                `;
                 return;
-            }}
+            }
             
             const medals = ['🥇', '🥈', '🥉'];
             let html = '';
             
-            data.forEach((user, i) => {{
-                const medal = medals[i] || `#${{i+1}}`;
+            data.forEach((user, i) => {
                 const isMe = user.user_id == userId;
+                const isTop3 = i < 3;
                 let badge = '';
-                if (user.key_issued) badge = ' 🔑';
-                else if (user.is_completed) badge = ' ✅';
+                if (user.key_issued) badge = '🔑';
+                else if (user.is_completed) badge = '✅';
                 
                 html += `
-                    <div class="video-item" style="${{isMe ? 'border-left: 3px solid #6c5ce7;' : ''}}">
-                        <div style="font-size: 20px;">${{medal}}</div>
-                        <div style="flex:1;">
-                            <div><b>${{user.full_name || 'User'}}${{isMe ? ' 👈' : ''}}</b></div>
-                            <div style="font-size: 11px; color: #888;">@${{user.username || '—'}}</div>
+                    <div class="leaderboard-item ${isMe ? 'is-me' : ''} ${isTop3 ? 'top-3' : ''}">
+                        <div class="leaderboard-rank ${!isTop3 ? 'number' : ''}">${isTop3 ? medals[i] : i + 1}</div>
+                        <div class="leaderboard-user">
+                            <div class="leaderboard-name">${user.full_name || 'User'}${isMe ? ' (Вы)' : ''}</div>
+                            <div class="leaderboard-username">@${user.username || '—'}</div>
                         </div>
-                        <div style="text-align: right;">
-                            <div style="font-weight: bold;">${{user.video_count}}/${{REQUIRED}}</div>
-                            <div style="font-size: 11px;">${{badge}}</div>
+                        <div class="leaderboard-score">
+                            <div class="leaderboard-videos">${user.video_count}/${REQUIRED}</div>
+                            <div class="leaderboard-badge">${badge}</div>
                         </div>
                     </div>
                 `;
-            }});
+            });
             
             container.innerHTML = html;
-        }}
+        }
         
-        function switchTab(tab) {{
-            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        // Switch tabs
+        function switchTab(tab) {
+            // Update nav
+            document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
             document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
             
-            if (tab === 'task') {{
-                document.querySelectorAll('.tab')[0].classList.add('active');
-                document.getElementById('taskSection').classList.add('active');
-            }} else if (tab === 'data') {{
-                document.querySelectorAll('.tab')[1].classList.add('active');
-                document.getElementById('dataSection').classList.add('active');
-            }} else if (tab === 'videos') {{
-                document.querySelectorAll('.tab')[2].classList.add('active');
-                document.getElementById('videosSection').classList.add('active');
-            }} else if (tab === 'key') {{
-                document.querySelectorAll('.tab')[3].classList.add('active');
-                document.getElementById('keySection').classList.add('active');
-            }} else if (tab === 'top') {{
-                document.querySelectorAll('.tab')[4].classList.add('active');
-                document.getElementById('topSection').classList.add('active');
+            const tabs = ['task', 'data', 'videos', 'key', 'top'];
+            const index = tabs.indexOf(tab);
+            if (index >= 0) {
+                document.querySelectorAll('.nav-tab')[index].classList.add('active');
+                document.getElementById(`${tab}Section`).classList.add('active');
+            }
+            
+            // Load leaderboard when switching to top
+            if (tab === 'top') {
                 loadLeaderboard();
-            }}
-        }}
+            }
+            
+            // Haptic feedback
+            if (tg?.HapticFeedback) {
+                tg.HapticFeedback.selectionChanged();
+            }
+        }
         
-        function copyText(text) {{
-            navigator.clipboard.writeText(text);
-            showToast('✅ Скопировано!');
-        }}
+        // Copy text
+        function copyText(text, element) {
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('✅', 'Скопировано!');
+                if (tg?.HapticFeedback) {
+                    tg.HapticFeedback.notificationOccurred('success');
+                }
+            }).catch(() => {
+                showToast('❌', 'Ошибка копирования');
+            });
+        }
         
-        function copyKey() {{
-            if (userData?.key) {{
-                navigator.clipboard.writeText(userData.key);
-                showToast('🔑 Ключ скопирован!');
-            }}
-        }}
+        // Copy key
+        function copyKey() {
+            if (userData?.key) {
+                navigator.clipboard.writeText(userData.key).then(() => {
+                    showToast('🔑', 'Ключ скопирован!');
+                    if (tg?.HapticFeedback) {
+                        tg.HapticFeedback.notificationOccurred('success');
+                    }
+                });
+            }
+        }
         
-        function showToast(msg) {{
+        // Show toast
+        function showToast(icon, text) {
             const toast = document.getElementById('toast');
-            toast.textContent = msg;
-            toast.style.display = 'block';
-            setTimeout(() => {{
-                toast.style.display = 'none';
-            }}, 2000);
-        }}
+            const toastIcon = document.getElementById('toastIcon');
+            const toastText = document.getElementById('toastText');
+            
+            toastIcon.textContent = icon;
+            toastText.textContent = text;
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2000);
+        }
         
-        function openBot() {{
-            if (tg) {{
+        // Open bot
+        function openBot() {
+            if (tg) {
                 tg.close();
-            }} else {{
+            } else {
                 window.open('https://t.me/AimNooBBot', '_blank');
-            }}
-        }}
+            }
+        }
         
+        // Initialize
         loadUserData();
     </script>
 </body>
