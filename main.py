@@ -57,7 +57,10 @@ VIDEO_DESCRIPTION = """Скачать чит для Standoff 2 0.37.1: https://t
 COMMENT_TEXT = "Скачать чит Standoff 2: https://t.me/AimNooBsoft"
 TAGS = "standoff2, чит standoff2, скачать чит standoff2, standoff2 aimbot, standoff2 wallhack, aimnoob, чит на андроид, standoff2 0.37.1, standoff2 читы, aimbot standoff2"
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
 logger = logging.getLogger(__name__)
 
 # ================== ИНИЦИАЛИЗАЦИЯ ==================
@@ -515,7 +518,38 @@ async def callback_get_key(callback: types.CallbackQuery):
         )
 
 
-# ================== API ROUTES FASTAPI ==================
+# ================== FASTAPI ROUTES ==================
+def validate_init_data(init_data: str) -> dict | None:
+    """Валидация данных от Telegram Mini App"""
+    try:
+        parsed = parse_qs(init_data)
+        check_hash = parsed.get("hash", [None])[0]
+        if not check_hash:
+            return None
+
+        data_check_arr = []
+        for key, val in sorted(parsed.items()):
+            if key != "hash":
+                data_check_arr.append(f"{key}={val[0]}")
+        data_check_string = "\n".join(data_check_arr)
+
+        secret_key = hmac.new(
+            b"WebAppData", BOT_TOKEN.encode(), hashlib.sha256
+        ).digest()
+        computed_hash = hmac.new(
+            secret_key, data_check_string.encode(), hashlib.sha256
+        ).hexdigest()
+
+        if computed_hash == check_hash:
+            user_data = parsed.get("user", [None])[0]
+            if user_data:
+                return json.loads(unquote(user_data))
+        return None
+    except Exception as e:
+        logger.error(f"Validation error: {e}")
+        return None
+
+
 @app.get("/api/user/{user_id}")
 async def api_user(user_id: int):
     try:
@@ -552,37 +586,6 @@ async def api_validate(request: Request):
     if user:
         return JSONResponse({"valid": True, "user": user})
     return JSONResponse({"valid": False})
-
-
-def validate_init_data(init_data: str) -> dict | None:
-    """Валидация данных от Telegram Mini App"""
-    try:
-        parsed = parse_qs(init_data)
-        check_hash = parsed.get("hash", [None])[0]
-        if not check_hash:
-            return None
-
-        data_check_arr = []
-        for key, val in sorted(parsed.items()):
-            if key != "hash":
-                data_check_arr.append(f"{key}={val[0]}")
-        data_check_string = "\n".join(data_check_arr)
-
-        secret_key = hmac.new(
-            b"WebAppData", BOT_TOKEN.encode(), hashlib.sha256
-        ).digest()
-        computed_hash = hmac.new(
-            secret_key, data_check_string.encode(), hashlib.sha256
-        ).hexdigest()
-
-        if computed_hash == check_hash:
-            user_data = parsed.get("user", [None])[0]
-            if user_data:
-                return json.loads(unquote(user_data))
-        return None
-    except Exception as e:
-        logger.error(f"Validation error: {e}")
-        return None
 
 
 # ================== HTML FRONTEND ==================
@@ -643,26 +646,6 @@ HTML_TEMPLATE = f"""
             font-weight: bold;
         }}
         
-        .stats-grid {{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-            margin: 15px 0;
-        }}
-        
-        .stat-card {{
-            background: rgba(255,255,255,0.05);
-            border-radius: 12px;
-            padding: 12px;
-            text-align: center;
-        }}
-        
-        .stat-value {{
-            font-size: 24px;
-            font-weight: bold;
-            color: #6c5ce7;
-        }}
-        
         .nav-tabs {{
             display: flex;
             gap: 8px;
@@ -680,6 +663,14 @@ HTML_TEMPLATE = f"""
         
         .tab.active {{
             background: #6c5ce7;
+        }}
+        
+        .section {{
+            display: none;
+        }}
+        
+        .section.active {{
+            display: block;
         }}
         
         .video-item {{
@@ -705,6 +696,7 @@ HTML_TEMPLATE = f"""
             font-size: 18px;
             text-align: center;
             cursor: pointer;
+            margin: 15px 0;
         }}
         
         .btn {{
@@ -720,12 +712,8 @@ HTML_TEMPLATE = f"""
             margin-top: 10px;
         }}
         
-        .section {{
-            display: none;
-        }}
-        
-        .section.active {{
-            display: block;
+        .btn-success {{
+            background: linear-gradient(135deg, #00e676, #00c853);
         }}
         
         .toast {{
@@ -737,42 +725,113 @@ HTML_TEMPLATE = f"""
             padding: 10px 20px;
             border-radius: 10px;
             display: none;
+            z-index: 1000;
+        }}
+        
+        h3 {{
+            margin-bottom: 10px;
+            font-size: 18px;
+        }}
+        
+        a {{
+            color: #6c5ce7;
+            text-decoration: none;
+        }}
+        
+        .status-emoji {{
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 10px;
+        }}
+        
+        .status-title {{
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }}
+        
+        .status-text {{
+            text-align: center;
+            opacity: 0.8;
+            font-size: 14px;
+        }}
+        
+        .warning {{
+            background: rgba(255, 107, 107, 0.2);
+            border: 1px solid rgba(255, 107, 107, 0.3);
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-size: 12px;
+        }}
+        
+        .step {{
+            margin-bottom: 15px;
+        }}
+        
+        .step-number {{
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: #6c5ce7;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 24px;
+            font-size: 12px;
+            margin-right: 10px;
         }}
     </style>
 </head>
 <body>
     <div class="container">
         <div class="card" id="statusCard">
-            <div style="font-size: 48px; text-align: center;" id="statusEmoji">🎮</div>
-            <h2 id="statusTitle" style="text-align: center;">Добро пожаловать!</h2>
-            <p id="statusText" style="text-align: center; color: #aaa;">Выполни задание и получи ключ</p>
+            <div class="status-emoji" id="statusEmoji">🎮</div>
+            <div class="status-title" id="statusTitle">Добро пожаловать!</div>
+            <div class="status-text" id="statusText">Выполни задание и получи ключ</div>
         </div>
         
         <div class="card">
-            <h3>Прогресс</h3>
+            <h3>📊 Прогресс задания</h3>
             <div class="progress-bar">
                 <div class="progress-fill" id="progressFill">0/{REQUIRED_VIDEOS}</div>
             </div>
-            <div id="progressText">0 из {REQUIRED_VIDEOS} видео</div>
+            <div id="progressText" style="text-align: center; margin-top: 10px;">0 из {REQUIRED_VIDEOS} видео</div>
         </div>
         
         <div class="nav-tabs">
             <div class="tab active" onclick="switchTab('task')">📋 Задание</div>
             <div class="tab" onclick="switchTab('data')">📝 Данные</div>
-            <div class="tab" onclick="switchTab('videos')">📹 Видео</div>
+            <div class="tab" onclick="switchTab('videos')">📹 Мои видео</div>
             <div class="tab" onclick="switchTab('key')">🔑 Ключ</div>
+            <div class="tab" onclick="switchTab('top')">🏆 Топ</div>
         </div>
         
         <div id="taskSection" class="section active">
             <div class="card">
                 <h3>📋 Инструкция</h3>
-                <div style="margin: 15px 0;">
-                    <div style="margin: 10px 0;"><b>1.</b> Найди видео с читом Standoff 2 (без водяных знаков)</div>
-                    <div style="margin: 10px 0;"><b>2.</b> Загрузи на YouTube (НЕ Shorts)</div>
-                    <div style="margin: 10px 0;"><b>3.</b> Вставь название и описание из раздела "Данные"</div>
-                    <div style="margin: 10px 0;"><b>4.</b> Отправь ссылку боту</div>
-                    <div style="margin: 10px 0;"><b>5.</b> Повтори {REQUIRED_VIDEOS} раз и получи ключ!</div>
+                
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <strong>Найди видео</strong><br>
+                    Берёшь видео с TikTok из Telegram-каналов. Тематика: чит Standoff 2 0.37.1. Видео должны быть <b>БЕЗ</b> водяных знаков.
                 </div>
+                
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <strong>Выложи на YouTube</strong><br>
+                    Загружаешь как <b>обычный</b> ролик (НЕ Shorts). Вставляешь название и описание из раздела «Данные». В комментариях — ссылку на ТГ-канал.
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <strong>Отправь ссылку</strong><br>
+                    Отправь ссылку на загруженное видео боту. Повтори {REQUIRED_VIDEOS} раз. После проверки — получишь ключ!
+                </div>
+                
+                <div class="warning">
+                    ⚠️ Без ссылки в комментариях на ТГ-канал выдачи не будет! Это обязательное условие.
+                </div>
+                
                 <button class="btn" onclick="openBot()">📤 Отправить ссылку боту</button>
             </div>
         </div>
@@ -786,25 +845,41 @@ HTML_TEMPLATE = f"""
                 
                 <h3>📄 Описание</h3>
                 <div class="copy-block" onclick="copyText(`{VIDEO_DESCRIPTION}`)">
-                    {VIDEO_DESCRIPTION[:200]}...
+                    {VIDEO_DESCRIPTION[:150]}...
                 </div>
                 
                 <h3>💬 Комментарий</h3>
                 <div class="copy-block" onclick="copyText('{COMMENT_TEXT}')">
                     {COMMENT_TEXT}
                 </div>
+                
+                <div class="warning">
+                    💡 Нажми на блок чтобы скопировать текст
+                </div>
             </div>
         </div>
         
         <div id="videosSection" class="section">
-            <div class="card" id="videosList">
-                <div style="text-align: center; color: #aaa;">Загрузка...</div>
+            <div class="card">
+                <h3>📹 Мои видео</h3>
+                <div id="videosList">
+                    <div style="text-align: center;">Загрузка...</div>
+                </div>
             </div>
         </div>
         
         <div id="keySection" class="section">
             <div class="card" id="keyContent">
-                <div style="text-align: center; color: #aaa;">Загрузка...</div>
+                <div style="text-align: center;">Загрузка...</div>
+            </div>
+        </div>
+        
+        <div id="topSection" class="section">
+            <div class="card">
+                <h3>🏆 Таблица лидеров</h3>
+                <div id="leaderboardList">
+                    <div style="text-align: center;">Загрузка...</div>
+                </div>
             </div>
         </div>
     </div>
@@ -817,12 +892,13 @@ HTML_TEMPLATE = f"""
         let userId = null;
         
         const tg = window.Telegram?.WebApp;
-        
         if (tg) {{
             tg.ready();
             tg.expand();
             if (tg.initDataUnsafe?.user) {{
                 userId = tg.initDataUnsafe.user.id;
+                const name = tg.initDataUnsafe.user.first_name || 'User';
+                document.title = `AimNoob | ${{name}}`;
             }}
         }}
         
@@ -842,10 +918,25 @@ HTML_TEMPLATE = f"""
             }}
         }}
         
+        async function loadLeaderboard() {{
+            try {{
+                const res = await fetch('/api/leaderboard');
+                const data = await res.json();
+                renderLeaderboard(data);
+            }} catch(e) {{
+                console.error(e);
+            }}
+        }}
+        
         function renderAll() {{
             if (!userData) return;
             
-            // Status
+            const count = userData.video_count || 0;
+            const percent = (count / REQUIRED) * 100;
+            document.getElementById('progressFill').style.width = `${{percent}}%`;
+            document.getElementById('progressFill').textContent = `${{count}}/${{REQUIRED}}`;
+            document.getElementById('progressText').textContent = `${{count}} из ${{REQUIRED}} видео`;
+            
             if (userData.is_banned) {{
                 document.getElementById('statusEmoji').textContent = '🚫';
                 document.getElementById('statusTitle').textContent = 'Аккаунт заблокирован';
@@ -857,24 +948,18 @@ HTML_TEMPLATE = f"""
             }} else if (userData.is_completed) {{
                 document.getElementById('statusEmoji').textContent = '✅';
                 document.getElementById('statusTitle').textContent = 'Задание выполнено!';
-                document.getElementById('statusText').textContent = 'Ожидай проверки';
+                document.getElementById('statusText').textContent = 'Ожидай проверки администратором';
+            }} else if (count > 0) {{
+                document.getElementById('statusEmoji').textContent = '⏳';
+                document.getElementById('statusTitle').textContent = 'В процессе';
+                document.getElementById('statusText').textContent = `Осталось ${{REQUIRED - count}} видео`;
             }} else {{
                 document.getElementById('statusEmoji').textContent = '🎮';
-                document.getElementById('statusTitle').textContent = 'В процессе';
-                document.getElementById('statusText').textContent = `Осталось ${{REQUIRED - userData.video_count}} видео`;
+                document.getElementById('statusTitle').textContent = 'Добро пожаловать!';
+                document.getElementById('statusText').textContent = 'Выполни задание и получи чит';
             }}
             
-            // Progress
-            const count = userData.video_count || 0;
-            const percent = (count / REQUIRED) * 100;
-            document.getElementById('progressFill').style.width = `${{percent}}%`;
-            document.getElementById('progressFill').textContent = `${{count}}/${{REQUIRED}}`;
-            document.getElementById('progressText').textContent = `${{count}} из ${{REQUIRED}} видео`;
-            
-            // Videos
             renderVideos();
-            
-            // Key
             renderKey();
         }}
         
@@ -883,29 +968,23 @@ HTML_TEMPLATE = f"""
             const videos = userData?.videos || [];
             
             if (videos.length === 0) {{
-                container.innerHTML = '<div style="text-align: center; color: #aaa;">Видео пока нет</div>';
+                container.innerHTML = '<div style="text-align: center;">📭 Видео пока нет</div>';
                 return;
             }}
             
-            let html = '<h3>📹 Мои видео</h3>';
+            let html = '';
             videos.forEach((v, i) => {{
-                const statusColors = {{
-                    pending: '#ffab40',
-                    approved: '#00e676',
-                    rejected: '#ff5252'
-                }};
-                const statusText = {{
-                    pending: '⏳ На проверке',
-                    approved: '✅ Принято',
-                    rejected: '❌ Отклонено'
-                }};
+                const statusColor = v.status === 'approved' ? '#00e676' : v.status === 'rejected' ? '#ff5252' : '#ffab40';
+                const statusText = v.status === 'approved' ? '✅ Принято' : v.status === 'rejected' ? '❌ Отклонено' : '⏳ На проверке';
+                const date = v.submitted_at ? new Date(v.submitted_at).toLocaleDateString('ru-RU') : '';
                 html += `
                     <div class="video-item">
                         <div><b>#${{i+1}}</b></div>
-                        <div style="flex:1;">
-                            <a href="${{v.video_url}}" target="_blank" style="color: #6c5ce7;">${{v.video_url.substring(0, 50)}}...</a>
+                        <div style="flex:1; margin: 0 10px;">
+                            <a href="${{v.video_url}}" target="_blank" style="color: #6c5ce7;">Ссылка</a>
+                            <div style="font-size: 11px; color: #888;">${{date}}</div>
                         </div>
-                        <div style="color: ${{statusColors[v.status]}};">${{statusText[v.status]}}</div>
+                        <div style="color: ${{statusColor}};">${{statusText}}</div>
                     </div>
                 `;
             }});
@@ -917,22 +996,72 @@ HTML_TEMPLATE = f"""
             
             if (userData?.key) {{
                 container.innerHTML = `
-                    <h3>🔑 Ваш ключ</h3>
-                    <div class="key-value" onclick="copyKey()">${{userData.key}}</div>
-                    <button class="btn" onclick="window.open('{DOWNLOAD_LINK}', '_blank')">📥 Скачать чит</button>
-                    <button class="btn" onclick="window.open('{CHANNEL_LINK}', '_blank')">📌 Наш канал</button>
-                    <div style="margin-top: 10px; font-size: 12px; color: #aaa;">⚠️ Ключ одноразовый - никому не передавай!</div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 48px;">🔑</div>
+                        <h3>Ваш ключ активации</h3>
+                        <div class="key-value" onclick="copyKey()">${{userData.key}}</div>
+                        <button class="btn btn-success" onclick="window.open('{DOWNLOAD_LINK}', '_blank')">📥 Скачать чит</button>
+                        <button class="btn" onclick="window.open('{CHANNEL_LINK}', '_blank')">📌 Наш канал</button>
+                        <div class="warning" style="margin-top: 15px;">
+                            ⚠️ Ключ одноразовый — никому не передавай!
+                        </div>
+                    </div>
                 `;
             }} else if (userData?.is_completed) {{
-                container.innerHTML = '<div style="text-align: center;">⏳ Ожидание проверки администратором</div>';
+                container.innerHTML = `
+                    <div style="text-align: center;">
+                        <div style="font-size: 48px;">⏳</div>
+                        <h3>Ожидание проверки</h3>
+                        <p>Все видео отправлены! Администратор проверит и выдаст ключ. Обычно это занимает до 24 часов.</p>
+                    </div>
+                `;
             }} else {{
                 const left = REQUIRED - (userData?.video_count || 0);
                 container.innerHTML = `
-                    <div style="text-align: center;">🔒 Ключ пока недоступен</div>
-                    <div style="text-align: center; margin-top: 10px;">Осталось отправить <b>${{left}}</b> видео</div>
-                    <button class="btn" onclick="openBot()">📤 Продолжить задание</button>
+                    <div style="text-align: center;">
+                        <div style="font-size: 48px;">🔒</div>
+                        <h3>Ключ пока недоступен</h3>
+                        <p>Осталось отправить <b>${{left}}</b> видео. Выполни задание полностью!</p>
+                        <button class="btn" onclick="openBot()">📤 Продолжить задание</button>
+                    </div>
                 `;
             }}
+        }}
+        
+        function renderLeaderboard(data) {{
+            const container = document.getElementById('leaderboardList');
+            
+            if (!data || data.length === 0) {{
+                container.innerHTML = '<div style="text-align: center;">🏆 Пока никто не отправлял видео</div>';
+                return;
+            }}
+            
+            const medals = ['🥇', '🥈', '🥉'];
+            let html = '';
+            
+            data.forEach((user, i) => {{
+                const medal = medals[i] || `#${{i+1}}`;
+                const isMe = user.user_id == userId;
+                let badge = '';
+                if (user.key_issued) badge = ' 🔑';
+                else if (user.is_completed) badge = ' ✅';
+                
+                html += `
+                    <div class="video-item" style="${{isMe ? 'border-left: 3px solid #6c5ce7;' : ''}}">
+                        <div style="font-size: 20px;">${{medal}}</div>
+                        <div style="flex:1;">
+                            <div><b>${{user.full_name || 'User'}}${{isMe ? ' 👈' : ''}}</b></div>
+                            <div style="font-size: 11px; color: #888;">@${{user.username || '—'}}</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-weight: bold;">${{user.video_count}}/${{REQUIRED}}</div>
+                            <div style="font-size: 11px;">${{badge}}</div>
+                        </div>
+                    </div>
+                `;
+            }});
+            
+            container.innerHTML = html;
         }}
         
         function switchTab(tab) {{
@@ -940,7 +1069,7 @@ HTML_TEMPLATE = f"""
             document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
             
             if (tab === 'task') {{
-                document.querySelector('.tab:first-child').classList.add('active');
+                document.querySelectorAll('.tab')[0].classList.add('active');
                 document.getElementById('taskSection').classList.add('active');
             }} else if (tab === 'data') {{
                 document.querySelectorAll('.tab')[1].classList.add('active');
@@ -951,12 +1080,16 @@ HTML_TEMPLATE = f"""
             }} else if (tab === 'key') {{
                 document.querySelectorAll('.tab')[3].classList.add('active');
                 document.getElementById('keySection').classList.add('active');
+            }} else if (tab === 'top') {{
+                document.querySelectorAll('.tab')[4].classList.add('active');
+                document.getElementById('topSection').classList.add('active');
+                loadLeaderboard();
             }}
         }}
         
         function copyText(text) {{
             navigator.clipboard.writeText(text);
-            showToast();
+            showToast('✅ Скопировано!');
         }}
         
         function copyKey() {{
@@ -966,7 +1099,7 @@ HTML_TEMPLATE = f"""
             }}
         }}
         
-        function showToast(msg = '✅ Скопировано!') {{
+        function showToast(msg) {{
             const toast = document.getElementById('toast');
             toast.textContent = msg;
             toast.style.display = 'block';
@@ -1015,17 +1148,18 @@ async def run_bot():
 
 def run_fastapi():
     """Запуск FastAPI сервера"""
-    uvicorn.run(app, host="0.0.0.0", port=int(os.getenv("PORT", 8080)))
+    uvicorn.run(app, host="0.0.0.0", port=int(os.getenv("PORT", 8080)), log_level="info")
 
 
 if __name__ == "__main__":
-    # Запускаем бота в отдельном потоке
-    def start_bot_thread():
+    logger.info("Starting AimNoob application...")
+    
+    # Запускаем FastAPI в отдельном потоке
+    fastapi_thread = threading.Thread(target=run_fastapi, daemon=True)
+    fastapi_thread.start()
+    
+    # Запускаем бота в главном потоке
+    try:
         asyncio.run(run_bot())
-    
-    bot_thread = threading.Thread(target=start_bot_thread)
-    bot_thread.daemon = True
-    bot_thread.start()
-    
-    # Запускаем FastAPI в основном потоке
-    run_fastapi()
+    except KeyboardInterrupt:
+        logger.info("Bot stopped by user")
