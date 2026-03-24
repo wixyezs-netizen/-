@@ -13,19 +13,14 @@ COPY requirements.txt .
 # Устанавливаем Python зависимости
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Проверяем установку (без проверки executor)
-RUN python -c "import aiogram; print(f'✅ aiogram {aiogram.__version__} установлен')" && \
-    python -c "from fastapi import FastAPI; print('✅ FastAPI установлен')" && \
-    python -c "import aiosqlite; print('✅ aiosqlite установлен')"
-
-# Копируем весь проект
-COPY . .
+# Копируем код
+COPY main.py .
 
 # Создаем папку для базы данных
-RUN mkdir -p /app/data
+RUN mkdir -p data
 
 # Открываем порт
 EXPOSE 8080
 
-# Запускаем приложение
+# Запускаем
 CMD ["python", "main.py"]
